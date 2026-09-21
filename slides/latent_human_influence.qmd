@@ -10,6 +10,8 @@ format: revealjs
 
 ![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
 
+**SOME CONTENT**
+
 ::: {.reference}
 Based on Carleton et al. (2026), *Bayesian modelling of the latent human influence field in archaeological urban sediments at Koh Ker, Cambodia*. [doi:10.1016/j.jas.2026.106663](https://doi.org/10.1016/j.jas.2026.106663)
 :::
