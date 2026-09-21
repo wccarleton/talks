@@ -8,7 +8,7 @@ format: revealjs
 
 ## Introduction
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
 
 **SOME CONTENT**
 
@@ -94,7 +94,7 @@ Introduce the latent human influence field (LHIF) as the organising concept.
 
 ## Site and Context
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for Koh Ker location and archaeological landscape map" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for Koh Ker location and archaeological landscape map" fig-align="center" .img-card}
 
 ::: notes
 Add the paper's site map. Outline the historical context and distinguish political history from the sedimentary evidence for local activity.
@@ -108,7 +108,7 @@ Add the paper's site map. Outline the historical context and distinguish politic
 - Paired magnetic susceptibility and ceramic abundance.
 - Rapid, low-impact excavation as a potential survey strategy.
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for trench locations and fieldwork photograph" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for trench locations and fieldwork photograph" fig-align="center" .img-card}
 
 ---
 
@@ -118,13 +118,13 @@ Add the paper's site map. Outline the historical context and distinguish politic
 ::: {.column width="50%"}
 **Magnetic susceptibility**
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for magnetic susceptibility profile" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for magnetic susceptibility profile" fig-align="center" .img-card}
 :::
 
 ::: {.column width="50%"}
 **Ceramic abundance**
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for ceramic abundance profile" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for ceramic abundance profile" fig-align="center" .img-card}
 :::
 ::::
 
@@ -159,7 +159,7 @@ The model connects archaeological observations to an explicit theoretical quanti
 - Proxy channels linked within a causal framework.
 - Depth-wise reconstructions for the pilot trenches.
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for the paper's causal model diagram" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for the paper's causal model diagram" fig-align="center" .img-card}
 
 ::: notes
 Insert the model diagram. Walk through the latent process, channel-specific observation models, and hierarchical structure. Add equations here if appropriate for the audience.
@@ -188,7 +188,7 @@ Explain what a reconstructed profile means and how to read its uncertainty. Use 
 
 ## Reconstructing Human Influence
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for reconstructed LHIF profiles and uncertainty intervals" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for reconstructed LHIF profiles and uncertainty intervals" fig-align="center" .img-card}
 
 ::: notes
 Insert the principal reconstruction figure. Highlight the main depth-wise patterns and differences between trenches. Add the figure's specific result as a short takeaway.
@@ -200,7 +200,7 @@ Insert the principal reconstruction figure. Highlight the main depth-wise patter
 
 - Magnetic susceptibility tracks ceramic-rich anthropogenic horizons.
 
-![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for comparison of susceptibility and ceramic-rich horizons" fig-align="center" .img-card}
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for comparison of susceptibility and ceramic-rich horizons" fig-align="center" .img-card}
 
 ::: notes
 Use the paper's comparison to explain the practical value of susceptibility measurements. Discuss what the pilot establishes about this proxy at Koh Ker.

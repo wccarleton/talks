@@ -24,7 +24,7 @@ quarto preview slides/my-talk.qmd
 ```
 
 Set the title, subtitle, date (`YYYY-MM-DD`), description, event, and location.
-The template uses branding images as runnable placeholders: replace these and
+The template uses a lightweight SVG image placeholder: replace these images and
 update their alternative text and credits. Replace the example citation as needed.
 Talks inherit the shared author and Reveal settings from `slides/_metadata.yml`;
 individual talks can override these settings in their front matter.
@@ -69,7 +69,7 @@ Bucket provisioning/synchronization, offline export presets, and PDF/PowerPoint
 workflows are not configured yet. Font Awesome currently
 loads from a CDN.
 Do not commit generated output; the old workflow of committing `docs/` is retired.
-Only branding assets are explicitly copied as shared project resources.
+Branding and lightweight placeholder assets are copied as shared project resources.
 
 ## Website deployment
 

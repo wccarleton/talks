@@ -55,7 +55,7 @@ A concise statement of the problem, question, or claim.
 
 ::: {.column width="50%"}
 
-![](../assets/branding/crest.png){width=90% fig-alt="Description of figure"}
+![](../assets/placeholders/image.svg){width=90% fig-alt="Description of figure"}
 
 <p class="image-credit">Image/source credit</p>
 
@@ -105,7 +105,7 @@ background-position="center"}
 
 ::: {.column width="45%"}
 
-![](../assets/branding/crest.png){width=100% fig-alt="Description of figure"}
+![](../assets/placeholders/image.svg){width=100% fig-alt="Description of figure"}
 
 :::
 
@@ -115,7 +115,7 @@ background-position="center"}
 
 ## Result / Model
 
-![](../assets/branding/crest.png){width=75% fig-alt="Description of model"}
+![](../assets/placeholders/image.svg){width=75% fig-alt="Description of model"}
 
 ::: {.fragment}
 **Interpretation:** One sentence saying what the audience should take from the figure.

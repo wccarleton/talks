@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Image placeholder</title>
+  <desc id="desc">A pale teal 16 by 9 rectangle with a dashed inset border and diagonal guides for assessing slide layouts.</desc>
+  <rect width="1600" height="900" fill="#eef4f3"/>
+  <g fill="none" stroke="#b9cecb" stroke-width="3">
+    <path d="M0 0L1600 900M1600 0L0 900"/>
+    <rect x="24" y="24" width="1552" height="852" rx="12" stroke-dasharray="16 12"/>
+  </g>
+  <rect x="460" y="350" width="680" height="200" rx="18" fill="#eef4f3"/>
+  <g fill="#006c66" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="800" y="435" font-size="52" font-weight="bold">IMAGE PLACEHOLDER</text>
+    <text x="800" y="495" font-size="30">16:9 · 1600 × 900</text>
+  </g>
+</svg>

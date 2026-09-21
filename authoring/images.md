@@ -1,5 +1,12 @@
 # Images without storing the media in Git
 
+For layout work before the real images are available, use the small, tracked
+16:9 SVG placeholder. It works without configuring any external storage:
+
+```markdown
+![](../assets/placeholders/image.svg){fig-alt="Planned map of Koh Ker" width=80%}
+```
+
 Use ordinary Markdown images. Three source forms can be mixed in one talk:
 
 ```markdown
