@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - slides/*.qmd
+    - bibliography.qmd
+  resources:
+    - .nojekyll
+    - assets/branding/**
+
+bibliography: references.bib
+
+# Base for images written as assets:talk-name/image.png.
+# Set a public HTTPS URL or a local folder (use forward slashes).
+# A deck's front matter can override this value. Blank until storage is chosen.
+assets-base: ""
+
+filters:
+  - filters/assets.lua
+  - quarto
+
+website:
+  title: "W. Christopher Carleton · Talks"
+  navbar:
+    left:
+      - text: "Talks"
+        href: index.qmd
+      - text: "Bibliography"
+        href: bibliography.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: false
+    html-math-method: mathml

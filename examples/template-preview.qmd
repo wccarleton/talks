@@ -1,0 +1,229 @@
+---
+format: revealjs
+metadata-files:
+  - ../slides/_metadata.yml
+title: "Talk Title"
+subtitle: "Optional Subtitle"
+
+author: "W. Christopher Carleton"
+date: 2026-09-21
+
+# Useful metadata for the talks index
+description: "One-sentence description for the talks index"
+event: "Conference / Seminar / Institution"
+location: "City, Country"
+
+---
+
+## OPENING SECTION {.section-slide
+background-image="../assets/branding/section_bg.png"
+background-size="cover"
+background-position="center"}
+
+<p class="section-subtitle">One-sentence framing of the talk</p>
+
+---
+
+## Opening Problem
+
+::: {.v-center}
+
+A concise statement of the problem, question, or claim.
+
+::: {.fragment}
+**Core question:** What do we actually want to explain?
+:::
+
+:::
+
+---
+
+## Background / Motivation
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Key point**
+
+- Point one
+- Point two
+- Point three
+- Point four [@boxScienceStatistics1976]
+
+:::
+
+::: {.column width="50%"}
+
+![](../assets/branding/crest.png){width=90% fig-alt="Description of figure"}
+
+<p class="image-credit">Image/source credit</p>
+
+:::
+
+::::
+
+---
+
+## Main Claim
+
+::: {.callout-card}
+
+**Argument**
+
+State the central claim or proposition here.
+
+:::
+
+::: {.fragment}
+Then reveal the implication or qualification.
+:::
+
+---
+
+## SECTION TWO {.section-slide
+background-image="../assets/branding/section_bg.png"
+background-size="cover"
+background-position="center"}
+
+<p class="section-subtitle">Short description of this section</p>
+
+---
+
+## Evidence
+
+:::: {.columns}
+
+::: {.column width="55%"}
+
+- Observation
+- Observation
+- Observation
+- Result
+
+:::
+
+::: {.column width="45%"}
+
+![](../assets/branding/crest.png){width=100% fig-alt="Description of figure"}
+
+:::
+
+::::
+
+---
+
+## Result / Model
+
+![](../assets/branding/crest.png){width=75% fig-alt="Description of model"}
+
+::: {.fragment}
+**Interpretation:** One sentence saying what the audience should take from the figure.
+:::
+
+---
+
+## Comparison
+
+| Case / Model | Property A | Property B | Implication |
+|---|---:|---:|---|
+| A | — | — | — |
+| B | — | — | — |
+| C | — | — | — |
+
+---
+
+## SECTION THREE {.section-slide
+background-image="../assets/branding/section_bg.png"
+background-size="cover"
+background-position="center"}
+
+<p class="section-subtitle">Interpretation and implications</p>
+
+---
+
+## Interpretation
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**What the results show**
+
+- Point one
+- Point two
+- Point three
+
+:::
+
+::: {.column width="50%"}
+
+::: {.callout-card}
+
+**Important qualification**
+
+What the result does *not* establish, or an important limitation.
+
+:::
+
+:::
+
+::::
+
+---
+
+## Implications
+
+::: {.arrow-list}
+
+<div class="arrow-list-item">
+<i class="fa-solid fa-arrow-right"></i>
+<span>Implication one</span>
+</div>
+
+<div class="arrow-list-item">
+<i class="fa-solid fa-arrow-right"></i>
+<span>Implication two</span>
+</div>
+
+<div class="arrow-list-item">
+<i class="fa-solid fa-arrow-right"></i>
+<span>Implication three</span>
+</div>
+
+:::
+
+---
+
+## Take-Home
+
+::: {.v-center .h-center}
+
+**Main conclusion in one sentence.**
+
+::: {.fragment}
+Secondary conclusion or broader implication.
+:::
+
+:::
+
+---
+
+## Thank You
+
+::: {.v-center .h-center}
+
+**W. Christopher Carleton**  
+Max Planck Institute of Geoanthropology
+
+`wccarleton.org`
+
+:::
+
+---
+
+## References Cited {.smaller}
+
+::: {#refs}
+:::
+

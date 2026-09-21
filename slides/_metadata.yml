@@ -1,0 +1,22 @@
+author: "W. Christopher Carleton"
+format:
+  revealjs:
+    theme: [default, ../mpg.scss]
+    html-math-method: mathml
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    logo: ../assets/branding/crest.png
+    slide-number: true
+    footer: "Max Planck Institute of Geoanthropology"
+    transition: fade
+    controls: true
+    center: false
+    toc: false
+    code-overflow: wrap
+    width: 1920
+    height: 1080
+    margin: 0.02
+    max-scale: 1
+    template-partials:
+      - ../title-slide.html

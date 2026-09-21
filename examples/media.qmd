@@ -1,0 +1,15 @@
+---
+title: "Image source examples"
+format: revealjs
+metadata-files:
+  - ../slides/_metadata.yml
+assets-base: assets/branding
+---
+
+## An image through the asset prefix
+
+![Branding crest used as a small test image](assets:crest.png){width=20%}
+
+## An ordinary relative path
+
+![The same crest through a relative path](../assets/branding/crest.png){width=20%}

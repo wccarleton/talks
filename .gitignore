@@ -1,0 +1,23 @@
+.quarto/
+/docs/
+/_legacy/
+/examples/*.html
+/examples/*_files/
+/slides/*.html
+**/*_files/
+
+/.quarto/
+**/*.quarto_ipynb
+
+# Optional local media and machine-specific asset configuration
+/assets/content/
+/.media-cache/
+/_quarto-local.yml
+
+# Copied lecture research material, including embedded notebook images and data
+/notebooks/
+
+# Local credentials and environment overrides
+.env
+.env.*
+!.env.example

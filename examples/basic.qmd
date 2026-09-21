@@ -1,0 +1,59 @@
+---
+format: revealjs
+metadata-files:
+  - ../slides/_metadata.yml
+title: "Presentation Title"
+subtitle: "Optional Subtitle"
+author: "Your Name"
+date: today
+
+---
+
+## Introduction
+
+- Brief point 1
+- Brief point 2
+- Brief point 3
+
+---
+
+## A SECTION {.section-slide 
+   background-image="../assets/branding/section_bg.png" 
+   background-size="contain" 
+   background-position="center"}
+
+---
+
+## Key Points
+### some more headings
+#### and more
+1. Explain the first major idea
+2. Highlight supporting evidence
+3. Conclude with a takeaway message
+
+---
+
+## ANOTHER SECTION {.section-slide 
+   background-image="../assets/branding/section_bg.png" 
+   background-size="contain" 
+   background-position="center"}
+
+---
+
+## Math
+This is how math looks:
+
+$$
+x_j \sim Poisson(\lambda)
+$$
+
+And then inline, $\beta_0$
+
+---
+
+## Conclusion
+
+- Summarize the key points
+- End with a call to action or future direction
+
+

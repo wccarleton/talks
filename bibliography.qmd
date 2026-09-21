@@ -1,0 +1,8 @@
+---
+title: "Bibliography"
+format: html
+nocite: '@*'
+---
+
+The shared reference library for these talks, generated from `references.bib`.
+Each talk includes its own references cited; this page lists the full library.

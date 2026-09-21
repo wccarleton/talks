@@ -1,0 +1,25 @@
+---
+title: "Talks"
+subtitle: "Presentations, lectures, and invited talks"
+format:
+  html:
+    toc: false
+
+listing:
+  contents: slides/*.qmd
+  sort: "date desc"
+  type: default
+  fields:
+    - date
+    - title
+    - description
+  sort-ui: false
+  filter-ui: false
+  categories: false
+---
+
+A collection of talks and presentations by **W. Christopher Carleton**.
+
+The slide decks are published as interactive web presentations. References and supporting material are included where available.
+
+## Talks

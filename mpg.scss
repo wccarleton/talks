@@ -1,0 +1,627 @@
+/*-- scss:defaults --*/
+/* Brand tokens (edit these hexes/fonts to match your PPT) */
+$brand-primary: #006c66 !default;          // main accent
+$brand-accent:  #0b5fad !default;          // links / secondary
+$brand-text:    #111111 !default;          // body text
+$brand-muted:   #666666 !default;
+$brand-bg:      #ffffff !default;
+
+$title-bg-start: #f5f7f7 !default;
+$title-bg-end:   #e9efef !default;
+
+$logo-size: 90px !default;
+$footer-size: 0.85rem !default;
+
+/* If you have a corp font, set names here (or leave to system UI) */
+$font-body:    "Arial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !default;
+$font-heading: "Arial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !default;
+
+/*-- scss:rules --*/
+
+/* Optional webfont (only if you have a licensed .woff2 in assets/)
+@font-face {
+  font-family: 'Corp Sans';
+  src: url('assets/corp-sans.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* Expose tokens as CSS variables for easy tweaking if needed */
+:root {
+  --brand-primary: #{$brand-primary};
+  --brand-primary-contrast: #ffffff;
+  --brand-accent: #{$brand-accent};
+  --brand-text: #{$brand-text};
+  --brand-muted: #{$brand-muted};
+  --brand-bg: #{$brand-bg};
+
+  --title-bg-start: #{$title-bg-start};
+  --title-bg-end:   #{$title-bg-end};
+
+  --logo-size: #{$logo-size};
+  --footer-size: #{$footer-size};
+}
+
+/* Base */
+
+.reveal {
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  font-family: #{$font-body};
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: #{$font-heading};
+  color: var(--brand-text);
+  letter-spacing: 0.2px;
+}
+
+/* Headings on normal slides (not title or section slides) */
+.reveal .slides section:not(.title-slide):not(.section-slide) h1,
+.reveal .slides section:not(.title-slide):not(.section-slide) h2,
+.reveal .slides section:not(.title-slide):not(.section-slide) h3 {
+  color: #006c66;   /* MPG dark teal accent 1 */
+}
+
+/* Accent bar before headings on normal slides */
+.reveal .slides section:not(.title-slide):not(.section-slide) h1::before,
+.reveal .slides section:not(.title-slide):not(.section-slide) h2::before,
+.reveal .slides section:not(.title-slide):not(.section-slide) h3::before {
+  content: "";                /* just a decorative element */
+  display: inline-block;
+  width: 0.25rem;             /* thickness of the bar */
+  height: 1em;                /* same height as the text line */
+  background-color: #006c66;  /* MPG dark teal accent 1 */
+  margin-right: 0.6rem;       /* space between bar and text */
+  vertical-align: middle;
+}
+
+.reveal a { color: var(--brand-accent); }
+.reveal a:hover { text-decoration: underline; }
+
+/* Logo + footer (Quarto injects these) */
+.reveal .slide-logo {
+  position: absolute;
+  width: var(--logo-size);
+  height: auto;
+  bottom: 18px;
+  right: 24px;
+  opacity: 0.95;
+}
+.reveal .footer {
+  font-size: var(--footer-size);
+  color: var(--brand-muted);
+  border-top: 1px solid #ddd;
+  padding-top: 6px;
+  text-align: left !important;
+  margin-left: 3rem !important;   /* add left padding so it doesn't kiss the button */
+}
+
+/* Title slide */
+section.title-slide {
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+}
+
+section.title-slide h1 {
+  position: absolute;
+  left: 12%;
+  top: 30%;
+  width: 60%;
+  font-size: 3.4rem !important;   /* try half the default size */
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  color: #ffffff !important;        /* white text */
+  text-transform: uppercase;        /* ALL CAPS */
+  letter-spacing: 1px;              /* optional: extra tracking */
+}
+
+section.title-slide .subtitle {
+  position: absolute;
+  left: 12%;
+  top: calc(85% - 2.4rem);
+  width: 60%;
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin: 0;
+  color: #ffffff !important;
+}
+
+section.title-slide .title-meta {
+  position: absolute;
+  left: 12%;
+  top: calc(85% + 0.35rem);
+  width: 60%;
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+/* Section divider slide */
+section.section-slide {
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+}
+
+section.section-slide h1,
+section.section-slide h2 {
+  position: absolute;
+  left: 12%;
+  top: 40%;
+  width: 60%;
+  font-size: 3.4rem !important;   /* try half the default size */
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  color: #ffffff !important;        /* white text */
+  text-transform: uppercase;        /* ALL CAPS */
+  letter-spacing: 1px;              /* optional: extra tracking */
+}
+
+section.section-slide .section-subtitle {
+  position: absolute;
+  left: 12%;
+  top: calc(85% - 2.4rem);
+  width: 60%;
+  margin: 0;
+  font-size: 2.2rem !important;
+  line-height: 1.1;
+  color: #ffffff !important;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+/* Accents, tables, code */
+.reveal strong, .reveal b { color: var(--brand-primary); }
+.reveal blockquote {
+  border-left: 4px solid var(--brand-primary);
+  padding-left: 0.9rem;
+  color: #333;
+}
+.reveal .fragment {
+  color: #555555;
+  font-style: italic;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;
+}
+.reveal .callout-card {
+  background: #f7f9f9;
+  border: 1px solid #dce5e4;
+  border-left: 6px solid var(--brand-primary);
+  border-radius: 8px;
+  padding: 0.85em 1em;
+  margin: 1em 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+.reveal .callout-card > :first-child {
+  margin-top: 0;
+}
+.reveal .callout-card > :last-child {
+  margin-bottom: 0;
+}
+.reveal .childe-quote-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 2.4rem;
+  align-items: start;
+}
+.reveal .childe-quote-text {
+  min-width: 0;
+}
+.reveal .childe-quote-slide blockquote {
+  margin-top: 0;
+}
+.reveal .childe-portrait {
+  margin-top: 0.35rem;
+}
+.reveal .childe-portrait img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  border-left: 4px solid var(--brand-primary);
+}
+.reveal .childe-portrait .image-credit {
+  margin: 0.45rem 0 0;
+  color: var(--brand-muted);
+  font-size: 0.62rem;
+  line-height: 1.25;
+}
+.dropcap {
+  font-size: 2.8em;
+  line-height: 0.8;
+  font-family: serif;
+  margin-right: 0.08em;
+  display: inline;
+}
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.68em;
+  line-height: 1.22;
+  margin: 0.8em 0;
+}
+.reveal table th, .reveal table td {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0.38em 0.55em;
+  vertical-align: top;
+}
+.reveal table th { background: #f7f9f9; color: #222; }
+.reveal .childe-cities-table table {
+  font-size: 0.72em;
+}
+.reveal .childe-cities-table table th:first-child,
+.reveal .childe-cities-table table td:first-child {
+  width: 40%;
+}
+.reveal .column table {
+  font-size: 0.58em;
+  line-height: 1.18;
+}
+.reveal .column table th,
+.reveal .column table td {
+  padding: 0.28em 0.42em;
+}
+.reveal .two-column-compact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+  margin-top: 0.9rem;
+}
+.reveal .two-column-compact > div {
+  min-width: 0;
+  border-left: 4px solid var(--brand-primary);
+  padding-left: 0.8rem;
+}
+.reveal .two-column-compact p {
+  margin: 0.35rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.25;
+}
+.reveal .scale-chain {
+  color: var(--brand-primary);
+  font-weight: 700;
+  margin: 0.4rem 0 0.9rem;
+  font-size: 0.9rem;
+}
+.reveal .flannery-intro-slide {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2rem;
+  align-items: start;
+}
+.reveal .flannery-intro-text {
+  min-width: 0;
+}
+.reveal .flannery-portrait {
+  margin-top: 0.25rem;
+}
+.reveal .flannery-portrait img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+  border-left: 4px solid var(--brand-primary);
+}
+.reveal .flannery-portrait .image-credit {
+  margin: 0.45rem 0 0;
+  color: var(--brand-muted);
+  font-size: 0.62rem;
+  line-height: 1.25;
+}
+.reveal pre code { font-size: 0.9rem; line-height: 1.25; }
+.reveal code {
+  background: #f4f6f7;
+  padding: 0.15rem 0.3rem;
+  border-radius: 6px;
+}
+
+/* Utilities */
+.brand-accent { color: var(--brand-primary); }
+.small { font-size: 0.9rem; }
+.reveal .fa-solid,
+.reveal .fa-regular,
+.reveal .fa-brands,
+.reveal .theme-icon {
+  color: var(--brand-primary);
+}
+.reveal .theme-icon {
+  font-size: 1.2em;
+}
+.reveal .prompt-label {
+  color: var(--brand-primary);
+  font-size: 1.35em;
+  font-weight: 700;
+  margin: 0 0 0.35em;
+}
+.reveal .prompt-question {
+  color: #222222;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 1em;
+}
+.reveal .h-center {
+  text-align: center;
+}
+.reveal .h-center > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+.reveal .h-center-flex {
+  display: flex;
+  justify-content: center;
+}
+.reveal .v-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+}
+.reveal .spacer-xs { height: 0.5rem; }
+.reveal .spacer-sm { height: 0.75rem; }
+.reveal .spacer-md { height: 1.5rem; }
+.reveal .spacer-lg { height: 2.5rem; }
+.reveal .spacer-xl { height: 4rem; }
+.reveal .columns.col-center-container {
+  display: flex !important;
+  align-items: stretch;
+  height: 90%;
+}
+.reveal .columns.col-center-container .column.v-center {
+  height: auto;
+}
+.inline-list {
+  display: inline-block;
+  margin: 0.18em 0.45em 0.18em 0;
+  color: #333333;
+}
+
+.reveal .arrow-list {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0.7rem 0 1rem;
+}
+
+.reveal .arrow-list-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  color: #333333;
+}
+
+.reveal .arrow-list-item i {
+  color: var(--brand-primary);
+  font-size: 0.82em;
+}
+
+/* Image diagram utilities */
+.reveal .image-diagram {
+  --image-diagram-gap: 1rem;
+  --image-diagram-max-height: 36vh;
+  display: grid;
+  gap: var(--image-diagram-gap);
+  width: 100%;
+  margin: 1rem auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.reveal .image-diagram > p,
+.reveal .image-diagram > figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+}
+
+.reveal .image-panel {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.reveal .image-panel > p,
+.reveal .image-panel > figure {
+  margin: 0;
+  width: 100%;
+}
+
+.reveal .image-label {
+  color: var(--brand-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.reveal .image-diagram img {
+  display: block;
+  max-width: 100%;
+  max-height: var(--image-diagram-max-height);
+  object-fit: contain;
+}
+
+.reveal .image-diagram-2,
+.reveal .image-diagram-3,
+.reveal .image-diagram-4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.reveal .image-diagram-3 > :first-child {
+  grid-column: 1 / -1;
+  max-width: 52%;
+}
+
+.reveal .image-diagram-tight {
+  --image-diagram-gap: 0.55rem;
+}
+
+.reveal .image-diagram-small {
+  --image-diagram-max-height: 28vh;
+}
+
+.reveal .image-diagram-tall {
+  --image-diagram-max-height: 42vh;
+}
+
+.reveal .image-diagram-large {
+  --image-diagram-max-height: 58vh;
+}
+
+/* Timeline utilities: remove this block if timelines are not needed */
+.reveal .timeline {
+  --timeline-items: 4;
+  display: grid;
+  grid-template-columns: repeat(var(--timeline-items), minmax(0, 1fr));
+  gap: 1.2rem;
+  align-items: start;
+  position: relative;
+  margin: 2.2rem 0 1rem;
+}
+
+.reveal .timeline::before {
+  content: "";
+  position: absolute;
+  top: 1.15rem;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--brand-primary);
+}
+
+.reveal .timeline-item {
+  position: relative;
+  min-width: 0;
+  padding: 2.4rem 0.7rem 0;
+  text-align: center;
+}
+
+.reveal .timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0.73rem;
+  left: 50%;
+  width: 0.9rem;
+  height: 0.9rem;
+  transform: translateX(-50%);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  box-shadow: 0 0 0 2px var(--brand-primary);
+  z-index: 1;
+}
+
+.reveal .timeline-date {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--brand-primary);
+  font-size: var(--timeline-date-size, 1.05rem);
+  font-weight: 700;
+}
+
+.reveal .timeline-title {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--brand-text);
+  font-size: var(--timeline-title-size, 1rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.reveal .timeline-note {
+  display: block;
+  color: var(--brand-muted);
+  font-size: var(--timeline-note-size, 0.88rem);
+  line-height: 1.22;
+}
+
+.reveal .timeline-card {
+  background: #f7f9f9;
+  border: 1px solid #dce5e4;
+  border-top: 4px solid var(--brand-primary);
+  border-radius: 8px;
+  padding: 0.85rem 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.reveal .timeline-card .timeline-date,
+.reveal .timeline-card .timeline-title,
+.reveal .timeline-card .timeline-note {
+  text-align: left;
+}
+
+.reveal .timeline-vertical {
+  --timeline-dot-size: 0.95rem;
+  --timeline-line-left: 1.25rem;
+  display: grid;
+  gap: 1rem;
+  position: relative;
+  margin: 1.2rem 0 0;
+  padding-left: 3.2rem;
+}
+
+.reveal .timeline-vertical::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0.4rem;
+  left: var(--timeline-line-left);
+  width: 3px;
+  background: var(--brand-primary);
+}
+
+.reveal .timeline-vertical .timeline-item {
+  position: relative;
+  min-width: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.reveal .timeline-vertical .timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0.85rem;
+  left: calc(-3.2rem + var(--timeline-line-left));
+  width: var(--timeline-dot-size);
+  height: var(--timeline-dot-size);
+  transform: translateX(-50%);
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  box-shadow: 0 0 0 2px var(--brand-primary);
+  z-index: 1;
+}
+
+.reveal .timeline-vertical.timeline-compact {
+  gap: 0.65rem;
+}
+
+.reveal .timeline-vertical.timeline-compact .timeline-card {
+  padding: 0.55rem 0.7rem;
+}
+/* End timeline utilities */
+
+/* Add padding inside normal slides */
+.reveal .slides section {
+  box-sizing: border-box;
+  padding: 2.5rem 3rem 4.5rem;
+}
+
+/* Don’t double-pad title and section slides (they’re absolutely positioned) */
+.reveal .slides section.title-slide,
+.reveal .slides section.section-slide {
+  padding: 0;
+}

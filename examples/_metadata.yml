@@ -1,0 +1,5 @@
+metadata-files:
+  - ../slides/_metadata.yml
+filters:
+  - ../filters/assets.lua
+  - quarto

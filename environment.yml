@@ -1,0 +1,13 @@
+name: urban-modelling
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - pymc
+  - arviz
+  - jupyterlab
+  - notebook
+  - ipykernel

@@ -1,0 +1,135 @@
+---
+format: revealjs
+metadata-files:
+  - ../slides/_metadata.yml
+title: "Timeline Style Test"
+subtitle: "Reusable Quarto Timeline"
+author: "W. Christopher Carleton"
+date: "June 2026"
+---
+
+## Timeline Test
+
+::: {.timeline style="--timeline-items: 5;"}
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Step 1</span>
+<span class="timeline-title">Observe</span>
+<span class="timeline-note">Collect material traces, measurements, or spatial patterns.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Step 2</span>
+<span class="timeline-title">Summarise</span>
+<span class="timeline-note">Inspect ranges, centres, spread, and obvious anomalies.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Step 3</span>
+<span class="timeline-title">Model</span>
+<span class="timeline-note">Represent assumptions about how the observations were generated.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Step 4</span>
+<span class="timeline-title">Infer</span>
+<span class="timeline-note">Estimate latent quantities and uncertainty from observed data.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Step 5</span>
+<span class="timeline-title">Interpret</span>
+<span class="timeline-note">Connect model output back to archaeological process.</span>
+:::
+:::
+:::
+
+::: {.fragment}
+
+The number of columns is controlled by `--timeline-items`.
+
+:::
+
+---
+
+## Vertical Timeline Test
+
+:::: {.columns}
+::: {.column width="30%"}
+
+Use this version when:
+
+- labels are longer
+- the sequence has many steps
+- you want a stronger reading order
+
+:::
+
+::: {.column width="70%"}
+
+::: {.timeline-vertical}
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Before fieldwork</span>
+<span class="timeline-title">Research design</span>
+<span class="timeline-note">Define the archaeological question and identify what must be observed.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Data collection</span>
+<span class="timeline-title">Material evidence</span>
+<span class="timeline-note">Record measurements, spatial traces, contexts, and uncertainty.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Analysis</span>
+<span class="timeline-title">Model structure</span>
+<span class="timeline-note">Connect observed traces to latent processes through explicit assumptions.</span>
+:::
+:::
+
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Interpretation</span>
+<span class="timeline-title">Historical inference</span>
+<span class="timeline-note">Translate estimates and uncertainty into archaeological explanation.</span>
+:::
+:::
+:::
+
+:::
+::::
+
+---
+
+## Reuse Pattern
+
+Use this block in any slide:
+
+```markdown
+::: {.timeline style="--timeline-items: 4;"}
+::: {.timeline-item}
+::: {.timeline-card}
+<span class="timeline-date">Date</span>
+<span class="timeline-title">Event title</span>
+<span class="timeline-note">Short interpretation.</span>
+:::
+:::
+:::
+```
+
+The styles live in the `Timeline utilities` section of `mpg.scss`.
+
+

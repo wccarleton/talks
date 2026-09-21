@@ -1,0 +1,275 @@
+---
+title: "Mapping Human Influence"
+subtitle: "Bayesian modelling of urban sediments at Koh Ker, Cambodia"
+author: "W. Christopher Carleton"
+date: today
+format: revealjs
+---
+
+## Introduction
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
+
+::: {.reference}
+Based on Carleton et al. (2026), *Bayesian modelling of the latent human influence field in archaeological urban sediments at Koh Ker, Cambodia*. [doi:10.1016/j.jas.2026.106663](https://doi.org/10.1016/j.jas.2026.106663)
+:::
+
+::: notes
+Open with the challenge of reconstructing a city's changing activity across a large landscape. Replace the placeholder with a Koh Ker photograph.
+:::
+
+---
+
+## Overview
+
+- The urban sampling problem.
+- Koh Ker as a pilot study.
+- From sediment proxies to a latent field.
+- Results and prospects for larger surveys.
+
+---
+
+## THE URBAN SAMPLING PROBLEM {.section-slide
+   background-image="/assets/section_bg.png"
+   background-size="contain"
+   background-position="center"}
+
+---
+
+## Space and Time
+
+:::: {.columns}
+::: {.column width="50%"}
+**Lidar and survey**
+
+- Extensive spatial coverage.
+- Limited chronological depth.
+:::
+
+::: {.column width="50%"}
+**Excavation**
+
+- Temporal depth.
+- Limited spatial coverage.
+:::
+::::
+
+::: {.card}
+How can we reconstruct an urban trajectory between these scales?
+:::
+
+---
+
+## Different Proxies, Different Measurements
+
+- Proxy records differ in resolution, distribution, and measurement structure.
+- Joint inference needs a model linking observations to a shared process.
+
+::: notes
+Use an example contrasting a continuous measurement with an artefact count. Introduce the distinction between what we observe and what we want to infer.
+:::
+
+---
+
+## Research Aim
+
+::: {.center-block}
+**Estimate past human influence by combining heterogeneous sediment proxies.**
+:::
+
+::: notes
+Introduce the latent human influence field (LHIF) as the organising concept.
+:::
+
+---
+
+## KOH KER {.section-slide
+   background-image="/assets/section_bg.png"
+   background-size="contain"
+   background-position="center"}
+
+---
+
+## Site and Context
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for Koh Ker location and archaeological landscape map" fig-align="center" .img-card}
+
+::: notes
+Add the paper's site map. Outline the historical context and distinguish political history from the sedimentary evidence for local activity.
+:::
+
+---
+
+## Pilot Study
+
+- Eight test trenches at Koh Ker, Cambodia.
+- Paired magnetic susceptibility and ceramic abundance.
+- Rapid, low-impact excavation as a potential survey strategy.
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for trench locations and fieldwork photograph" fig-align="center" .img-card}
+
+---
+
+## Two Observation Channels
+
+:::: {.columns}
+::: {.column width="50%"}
+**Magnetic susceptibility**
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for magnetic susceptibility profile" fig-align="center" .img-card}
+:::
+
+::: {.column width="50%"}
+**Ceramic abundance**
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for ceramic abundance profile" fig-align="center" .img-card}
+:::
+::::
+
+::: notes
+Show paired observations from one trench before introducing the model. Explain how each channel was recorded and its depth resolution.
+:::
+
+---
+
+## THE LATENT HUMAN INFLUENCE FIELD {.section-slide
+   background-image="/assets/section_bg.png"
+   background-size="contain"
+   background-position="center"}
+
+---
+
+## What Is a Latent Field?
+
+- **Latent:** human influence is inferred from its traces.
+- **Field:** influence can vary across the sediment archive.
+- Both proxies are noisy observations of a shared LHIF.
+
+::: {.card}
+The model connects archaeological observations to an explicit theoretical quantity.
+:::
+
+---
+
+## Model Structure
+
+- Bayesian hierarchical latent-variable model.
+- Proxy channels linked within a causal framework.
+- Depth-wise reconstructions for the pilot trenches.
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for the paper's causal model diagram" fig-align="center" .img-card}
+
+::: notes
+Insert the model diagram. Walk through the latent process, channel-specific observation models, and hierarchical structure. Add equations here if appropriate for the audience.
+:::
+
+---
+
+## From Observations to Inference
+
+::: {.center-block}
+**Field sampling → proxy measurements → joint model → estimated influence**
+:::
+
+::: notes
+Explain what a reconstructed profile means and how to read its uncertainty. Use the same trench as on the observation slide.
+:::
+
+---
+
+## RESULTS {.section-slide
+   background-image="/assets/section_bg.png"
+   background-size="contain"
+   background-position="center"}
+
+---
+
+## Reconstructing Human Influence
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for reconstructed LHIF profiles and uncertainty intervals" fig-align="center" .img-card}
+
+::: notes
+Insert the principal reconstruction figure. Highlight the main depth-wise patterns and differences between trenches. Add the figure's specific result as a short takeaway.
+:::
+
+---
+
+## Magnetic Susceptibility and Archaeological Horizons
+
+- Magnetic susceptibility tracks ceramic-rich anthropogenic horizons.
+
+![]({{< meta images_base >}}/img_placeholder_puidd2.png){fig-alt="Placeholder for comparison of susceptibility and ceramic-rich horizons" fig-align="center" .img-card}
+
+::: notes
+Use the paper's comparison to explain the practical value of susceptibility measurements. Discuss what the pilot establishes about this proxy at Koh Ker.
+:::
+
+---
+
+## From Depth to Urban Time
+
+::: {.card}
+A spacetime reconstruction requires sufficient sampling and temporal coregistration.
+:::
+
+::: notes
+Add the chronological evidence and explain how depth profiles could be aligned in time. Separate the pilot reconstructions from the proposed city-wide application.
+:::
+
+---
+
+## IMPLICATIONS {.section-slide
+   background-image="/assets/section_bg.png"
+   background-size="contain"
+   background-position="center"}
+
+---
+
+## Towards Larger Surveys
+
+- Low-impact trenching may enable scalable coring surveys.
+- Additional sedimentary proxies can extend the framework.
+
+::: notes
+Sketch a future sampling design. Discuss spatial coverage, dating, and the additional information different proxy channels could contribute.
+:::
+
+---
+
+## Model Thinking in the Field
+
+::: {.center-block}
+**What do we want to infer?**
+
+**Which observations would constrain it?**
+
+**How should we collect those observations?**
+:::
+
+::: notes
+Return to the connection between theory, statistical modelling, and field strategy. Develop this as the broader methodological message of the talk.
+:::
+
+---
+
+## Take-Home Points
+
+- A latent field provides a common target for heterogeneous proxies.
+- Koh Ker demonstrates the framework through a trench-based pilot.
+- Larger urban reconstructions depend on sampling and chronology.
+
+---
+
+## Reference
+
+::: {.reference}
+Carleton, W. Christopher, Thon Tho, David Brotherson, Samnang Phin, Huw Groucutt, Jürgen Renn, and Patrick Roberts. 2026. “Bayesian modelling of the latent human influence field in archaeological urban sediments at Koh Ker, Cambodia.” *Journal of Archaeological Science* 193: 106663. [https://doi.org/10.1016/j.jas.2026.106663](https://doi.org/10.1016/j.jas.2026.106663)
+:::
+
+---
+
+## Discussion
+
+::: {.center-block}
+**How could this framework change the way we sample ancient cities?**
+:::
