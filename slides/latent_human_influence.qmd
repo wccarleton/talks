@@ -30,7 +30,7 @@ Open with the challenge of reconstructing a city's changing activity across a la
 ---
 
 ## THE URBAN SAMPLING PROBLEM {.section-slide
-   background-image="/assets/section_bg.png"
+   background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
@@ -84,7 +84,7 @@ Introduce the latent human influence field (LHIF) as the organising concept.
 ---
 
 ## KOH KER {.section-slide
-   background-image="/assets/section_bg.png"
+   background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
@@ -133,7 +133,7 @@ Show paired observations from one trench before introducing the model. Explain h
 ---
 
 ## THE LATENT HUMAN INFLUENCE FIELD {.section-slide
-   background-image="/assets/section_bg.png"
+   background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
@@ -178,7 +178,7 @@ Explain what a reconstructed profile means and how to read its uncertainty. Use 
 ---
 
 ## RESULTS {.section-slide
-   background-image="/assets/section_bg.png"
+   background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
@@ -219,7 +219,7 @@ Add the chronological evidence and explain how depth profiles could be aligned i
 ---
 
 ## IMPLICATIONS {.section-slide
-   background-image="/assets/section_bg.png"
+   background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 

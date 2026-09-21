@@ -21,6 +21,7 @@ filters:
   - quarto
 
 website:
+  site-url: https://talks.wccarleton.org
   title: "W. Christopher Carleton · Talks"
   navbar:
     left:

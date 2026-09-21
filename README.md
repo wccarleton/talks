@@ -65,11 +65,26 @@ setup. Media stays outside Git; local images are packaged in generated output.
 ## Current scope
 
 The website, shared Reveal styling, and pluggable image resolution are configured.
-Bucket provisioning/synchronization, offline export presets, PDF/PowerPoint
-workflows, and automated deployment are not configured yet. Font Awesome currently
+Bucket provisioning/synchronization, offline export presets, and PDF/PowerPoint
+workflows are not configured yet. Font Awesome currently
 loads from a CDN.
 Do not commit generated output; the old workflow of committing `docs/` is retired.
 Only branding assets are explicitly copied as shared project resources.
+
+## Website deployment
+
+Pushing to `main` runs `.github/workflows/publish.yml`: GitHub Actions installs
+Quarto 1.9.37, renders the site, and deploys `docs/` as a GitHub Pages artifact.
+Generated output is never committed. The workflow can also be run manually from
+the repository's Actions tab.
+
+In GitHub Settings → Pages, select **GitHub Actions** as the source and set the
+custom domain to `talks.wccarleton.org`. Enable HTTPS when GitHub offers it.
+Cloudflare DNS should have a `talks` CNAME targeting `wccarleton.github.io`.
+
+The build runner cannot access laptop or external-drive paths. Published talks
+must use publicly reachable image URLs (directly or through `assets-base`), or
+files available to the build. Image storage is still to be configured.
 
 The copied research notebooks, their figures, and `rubric-print.css` remain for
 review; they are not part of the configured site build.
