@@ -1,0 +1,7 @@
+export-remote-images: true
+
+format:
+  revealjs:
+    embed-resources: true
+    include-in-header:
+      text: ""

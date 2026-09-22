@@ -10,8 +10,6 @@ format: revealjs
 
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr1.jpg){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
 
-**SOME CONTENT**
-
 ::: {.reference}
 Based on Carleton et al. (2026), *Bayesian modelling of the latent human influence field in archaeological urban sediments at Koh Ker, Cambodia*. [doi:10.1016/j.jas.2026.106663](https://doi.org/10.1016/j.jas.2026.106663)
 :::
@@ -94,7 +92,7 @@ Introduce the latent human influence field (LHIF) as the organising concept.
 
 ## Site and Context
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for Koh Ker location and archaeological landscape map" fig-align="center" .img-card}
+![](assets:kk_regional.jpeg){fig-alt="Placeholder for Koh Ker location and archaeological landscape map" fig-align="center" .img-card}
 
 ::: notes
 Add the paper's site map. Outline the historical context and distinguish political history from the sedimentary evidence for local activity.

@@ -55,6 +55,28 @@ quarto preview examples/timeline.qmd
 Examples reuse `slides/_metadata.yml`. Explicit example renders produce local
 HTML and support folders beside the example source; these are ignored by Git.
 
+## Offline and PowerPoint export
+
+Generated offline decks and PowerPoint files go under `export/`, which is
+ignored by Git. The tracked export wiring is `_quarto-export.yml`,
+`scripts/export-talk.sh`, and `filters/assets.lua`.
+
+From Bash or WSL, export the current talk with:
+
+```bash
+scripts/export-talk.sh slides/latent_human_influence.qmd
+```
+
+This renders:
+
+- `export/latent_human_influence/offline/slides/latent_human_influence.html`: a self-contained Reveal HTML export.
+- `export/latent_human_influence/pptx/slides/latent_human_influence.pptx`: a PowerPoint export.
+
+The export profile sets `export-remote-images: true`, so direct HTTPS Markdown
+images are downloaded during rendering and embedded for offline/PPTX output.
+Normal website renders keep HTTPS image links as remote URLs. Remote images must
+be reachable when you run the export command.
+
 ## Images
 
 Use `![Caption](assets:talk-name/image.png)` with a configurable URL or local
