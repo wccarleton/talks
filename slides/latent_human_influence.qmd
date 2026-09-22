@@ -8,7 +8,7 @@ format: revealjs
 
 ## Introduction
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr1.jpg){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
 
 **SOME CONTENT**
 
