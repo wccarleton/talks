@@ -2,4 +2,5 @@ metadata-files:
   - ../slides/_metadata.yml
 filters:
   - ../filters/assets.lua
+  - ../filters/image-cards.lua
   - quarto

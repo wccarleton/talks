@@ -77,6 +77,13 @@ images are downloaded during rendering and embedded for offline/PPTX output.
 Normal website renders keep HTTPS image links as remote URLs. Remote images must
 be reachable when you run the export command.
 
+## Typography
+
+The slide theme bundles Open Sans for body text and Roboto Slab for headings,
+with slate-grey body text and teal accents. No font installation is needed for
+browser presentations. Font files and licenses live in `assets/fonts/`; these
+are shared styling assets tracked with the theme. PowerPoint styling is separate.
+
 ## Images
 
 Use `![Caption](assets:talk-name/image.png)` with a configurable URL or local
@@ -84,11 +91,17 @@ folder base, a full local file path, or a direct HTTPS image URL. See
 [image storage and configuration](authoring/images.md) for syntax and local/R2
 setup. Media stays outside Git; local images are packaged in generated output.
 
+Put upload images in the Git-ignored `images/` folder and run
+`./scripts/sync-media.ps1` to optimize and upload them to `r2-talks:talks`.
+Originals are preserved in Git-ignored `media-originals/`. Public image links use
+`https://talks-assets.wccarleton.org` plus the image's relative path.
+See [media upload setup and workflow](authoring/media-upload.md).
+
 ## Current scope
 
 The website, shared Reveal styling, and pluggable image resolution are configured.
-Bucket provisioning/synchronization, offline export presets, and PDF/PowerPoint
-workflows are not configured yet. Font Awesome currently
+The local media preparation/upload scripts are configured; R2 access uses a
+separate locally configured `r2-talks` remote. Font Awesome currently
 loads from a CDN.
 Do not commit generated output; the old workflow of committing `docs/` is retired.
 Branding and lightweight placeholder assets are copied as shared project resources.
@@ -106,7 +119,7 @@ Cloudflare DNS should have a `talks` CNAME targeting `wccarleton.github.io`.
 
 The build runner cannot access laptop or external-drive paths. Published talks
 must use publicly reachable image URLs (directly or through `assets-base`), or
-files available to the build. Image storage is still to be configured.
+files available to the build. Upload images before publishing slides that reference them.
 
 The copied research notebooks, their figures, and `rubric-print.css` remain for
 review; they are not part of the configured site build.

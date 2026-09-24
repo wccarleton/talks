@@ -2,7 +2,7 @@
 /* Brand tokens (edit these hexes/fonts to match your PPT) */
 $brand-primary: #006c66 !default;          // main accent
 $brand-accent:  #0b5fad !default;          // links / secondary
-$brand-text:    #111111 !default;          // body text
+$brand-text:    #374151 !default;          // slate-grey body text
 $brand-muted:   #666666 !default;
 $brand-bg:      #ffffff !default;
 
@@ -12,21 +12,19 @@ $title-bg-end:   #e9efef !default;
 $logo-size: 90px !default;
 $footer-size: 0.85rem !default;
 
-/* If you have a corp font, set names here (or leave to system UI) */
-$font-body:    "Arial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !default;
-$font-heading: "Arial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif !default;
+/* Bundled font faces are loaded by assets/fonts/fonts.css. */
+$font-body:    "Open Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif !default;
+$font-heading: "Roboto Slab", Georgia, serif !default;
+$font-family-sans-serif: $font-body;
+$presentation-heading-font: $font-heading;
+$presentation-heading-font-weight: 600;
+$body-color: $brand-text;
+
+// Body size is independent of the theme's rem-based spacing and title layouts.
+$slide-body-size: 30px !default;       // previously 40px
+$slide-reference-size: 18px !default;
 
 /*-- scss:rules --*/
-
-/* Optional webfont (only if you have a licensed .woff2 in assets/)
-@font-face {
-  font-family: 'Corp Sans';
-  src: url('assets/corp-sans.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-*/
 
 /* Expose tokens as CSS variables for easy tweaking if needed */
 :root {
@@ -50,10 +48,38 @@ $font-heading: "Arial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-
   background: var(--brand-bg);
   color: var(--brand-text);
   font-family: #{$font-body};
+  font-size: $slide-body-size;
 }
 
-.reveal h1, .reveal h2, .reveal h3 {
+// Preserve existing heading sizes when shrinking the surrounding body text.
+.reveal h1 { font-size: 100px; }
+.reveal h2 { font-size: 64px; }
+.reveal h3 { font-size: 52px; }
+.reveal h4 { font-size: 40px; }
+
+// Compact source credits and full bibliography entries.
+.reveal .reference,
+.reveal #refs {
+  font-size: $slide-reference-size;
+  line-height: 1.35;
+  color: var(--brand-muted);
+  overflow-wrap: anywhere;
+}
+.reveal .reference {
+  margin-top: 0.6em;
+}
+.reveal .reference p {
+  margin: 0.25em 0;
+}
+.reveal .reference a,
+.reveal #refs a {
+  color: inherit;
+}
+
+.reveal h1, .reveal h2, .reveal h3,
+.reveal h4, .reveal h5, .reveal h6 {
   font-family: #{$font-heading};
+  font-weight: 600;
   color: var(--brand-text);
   letter-spacing: 0.2px;
 }
@@ -181,7 +207,7 @@ section.section-slide .section-subtitle {
 .reveal blockquote {
   border-left: 4px solid var(--brand-primary);
   padding-left: 0.9rem;
-  color: #333;
+  color: var(--brand-text);
 }
 .reveal .fragment {
   color: #555555;
@@ -253,7 +279,7 @@ section.section-slide .section-subtitle {
   padding: 0.38em 0.55em;
   vertical-align: top;
 }
-.reveal table th { background: #f7f9f9; color: #222; }
+.reveal table th { background: #f7f9f9; color: var(--brand-text); }
 .reveal .childe-cities-table table {
   font-size: 0.72em;
 }
@@ -343,12 +369,35 @@ section.section-slide .section-subtitle {
   margin: 0 0 0.35em;
 }
 .reveal .prompt-question {
-  color: #222222;
+  color: var(--brand-text);
   font-size: 1.8em;
   font-weight: 700;
   line-height: 1.15;
   margin: 0 0 1em;
 }
+/* Give centered blocks the remaining slide space below headings/content. */
+.reveal .slides section.slide:has(> .center-block) {
+  flex-direction: column;
+  height: var(--slide-height, 1080px);
+  box-sizing: border-box;
+}
+/* Keep layout stable for past/present/future slides during transitions.
+   Respect Reveal's inline display:none when it unloads distant slides. */
+.reveal .slides section.slide:has(> .center-block):not([style*="display: none"]) {
+  display: flex !important;
+}
+.reveal .center-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  width: 100%;
+  text-align: center;
+}
+.reveal .center-block > :first-child { margin-top: 0; }
+.reveal .center-block > :last-child { margin-bottom: 0; }
+
 .reveal .h-center {
   text-align: center;
 }
@@ -371,6 +420,15 @@ section.section-slide .section-subtitle {
 .reveal .spacer-md { height: 1.5rem; }
 .reveal .spacer-lg { height: 2.5rem; }
 .reveal .spacer-xl { height: 4rem; }
+/* Keep columns in their own row, independent of preceding inline-block lists. */
+.reveal .columns {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.reveal .columns > .column {
+  min-width: 0;
+}
 .reveal .columns.col-center-container {
   display: flex !important;
   align-items: stretch;
@@ -382,7 +440,7 @@ section.section-slide .section-subtitle {
 .inline-list {
   display: inline-block;
   margin: 0.18em 0.45em 0.18em 0;
-  color: #333333;
+  color: var(--brand-text);
 }
 
 .reveal .arrow-list {
@@ -395,12 +453,60 @@ section.section-slide .section-subtitle {
   display: flex;
   align-items: baseline;
   gap: 0.55rem;
-  color: #333333;
+  color: var(--brand-text);
 }
 
 .reveal .arrow-list-item i {
   color: var(--brand-primary);
   font-size: 0.82em;
+}
+
+/* Simple photo frame; apply .img-card directly to a Markdown image. */
+.reveal img.img-card,
+.reveal figure:has(img.img-card) {
+  box-sizing: border-box;
+  padding: 8px 8px 22px;
+  background: #ffffff;
+  border: 1px solid #dce2e0;
+  border-radius: 2px;
+  box-shadow: 0 3px 10px rgba(24, 44, 40, 0.12);
+  object-fit: contain;
+}
+
+/* Quarto places bracket text in a sibling figcaption: frame the whole figure. */
+.reveal figure:has(img.img-card) {
+  display: table;
+  /* Override Quarto's .quarto-figure > figure { width: 100%; }. */
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.reveal figure:has(img.img-card) > p {
+  margin: 0;
+  line-height: 0;
+}
+
+.reveal figure img.img-card {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.reveal figure:has(img.img-card) > figcaption {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 0 0;
+  margin: 0;
+  color: var(--brand-text);
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 /* Image diagram utilities */

@@ -50,6 +50,31 @@ Key slide point to emphasize. Can appear in a column instead if one column is so
 
 Avoid `###` headings inside columns when they are meant only as visual labels. In reveal slides, heading levels can be interpreted as slide structure. Prefer bold labels such as `**Key concept**` inside columns and callouts.
 
+### Framed images
+
+Apply `.img-card` to an image for a simple white photo frame with a slightly
+wider bottom edge, a fine border, and a subtle shadow:
+
+```markdown
+![Fieldwork at Koh Ker](assets:koh-ker/fieldwork.jpg){.img-card height=350 fig-align="center"}
+```
+
+The frame includes 8px padding on the top and sides and 22px at the bottom.
+Text in the square brackets appears beneath the image inside the same frame,
+as a small centered caption. For captioned figures, explicit image dimensions
+size the image itself; the frame and caption add to the total card height.
+`object-fit: contain` keeps the whole image visible. Omit `.img-card` when a
+plot should have no frame.
+
+In Reveal decks, `filters/image-cards.lua` automatically disables Quarto's
+image stretching for `.img-card`, keeping captions inside the figure on both
+top-level slides and inside columns. No manual `.nostretch` is needed.
+Set an image height when needed to leave room for the caption and slide text:
+
+```markdown
+![Caption](assets:koh-ker/fieldwork.jpg){.img-card height=600 fig-align="center"}
+```
+
 ### Image diagrams
 
 Use `.image-diagram` when a slide needs a compact, predictable arrangement of two, three, or four images. This is useful for visual comparisons, process diagrams made from separate panels, or recurring examples where you want the same layout to work both on a full slide and inside a column.

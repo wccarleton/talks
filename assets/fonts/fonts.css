@@ -1,0 +1,24 @@
+/* Font URLs are relative to this stylesheet, for local and hosted decks. */
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Italic-Variable.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("RobotoSlab-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}

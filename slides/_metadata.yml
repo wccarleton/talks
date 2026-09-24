@@ -1,6 +1,7 @@
 author: "W. Christopher Carleton"
 format:
   revealjs:
+    css: ../assets/fonts/fonts.css
     theme: [default, ../mpg.scss]
     html-math-method: mathml
     include-in-header:

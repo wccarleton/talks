@@ -22,3 +22,16 @@
 .env
 .env.*
 !.env.example
+
+# Local upload media, original archives, tools, and credentials
+/images/
+/media-originals/
+/tools/
+/scripts/rclone*/
+*.env
+*.env.local
+/scripts/r2access.env
+**/rclone.conf
+/credentials/
+__pycache__/
+*.pyc

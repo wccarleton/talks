@@ -9,16 +9,18 @@ project:
     - .nojekyll
     - assets/branding/**
     - assets/placeholders/**
+    - assets/fonts/**
 
 bibliography: references.bib
 
 # Base for images written as assets:talk-name/image.png.
 # Set a public HTTPS URL or a local folder (use forward slashes).
-# A deck's front matter can override this value. Blank until storage is chosen.
-assets-base: ""
+# A deck's front matter or TALKS_ASSETS_BASE can override this value.
+assets-base: "https://talks-assets.wccarleton.org"
 
 filters:
   - filters/assets.lua
+  - filters/image-cards.lua
   - quarto
 
 website:

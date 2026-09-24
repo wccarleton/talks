@@ -24,11 +24,12 @@ slashes and wrap paths containing spaces in angle brackets.
 For a shared hosted location, add this top-level setting to `_quarto.yml`:
 
 ```yaml
-assets-base: https://media.example.org/talks
+assets-base: https://talks-assets.wccarleton.org
 ```
 
-The setting is already present in this repository with an empty value; edit it
-when you choose storage. Decks without `assets:` images need no configured base.
+The setting is already present with the talks bucket's public host. Edit it to
+change storage. See [prepare and upload media](media-upload.md) for the one-command
+optimization and R2 upload workflow. Decks without `assets:` images need no configured base.
 For a per-deck override, put the same key in that QMD's YAML front matter:
 
 ```yaml
@@ -43,7 +44,7 @@ the repository default. Individual images can always use full paths or URLs
 regardless of the base setting.
 
 The first image above then uses
-`https://media.example.org/talks/koh-ker/map.png`. Use a public HTTPS delivery URL
+`https://talks-assets.wccarleton.org/koh-ker/map.png`. Use a public HTTPS delivery URL
 for R2 or another host, not an S3 API endpoint or bucket credentials. A direct
 image URL is needed; a webpage containing an image is not an image source.
 
