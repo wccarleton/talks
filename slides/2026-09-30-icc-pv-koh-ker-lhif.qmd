@@ -1,0 +1,409 @@
+---
+title: "Koh Ker: Fieldwork and Laboratory Update"
+subtitle: "11th Technical Session of ICC-PV · Virtual presentation"
+date: 2026-09-30
+date-format: "D MMMM YYYY"
+event: "11th Technical Session of ICC-PV"
+venue: "Sokha Angkor Resort"
+location: "Siem Reap Province, Cambodia"
+presentation-mode: "virtual"
+description: "Virtual progress report to the 11th Technical Session of ICC-PV: the JAS LHIF framework, FTIR and pXRF results from the 2024 pilot trenches, and the March 2026 coring campaign towards a spatial reconstruction."
+draft: true
+# Optional per-deck image location:
+# assets-base: 'E:/Talk media/koh-ker'
+---
+
+## THE JAS PAPER AND LHIF FRAMEWORK {.section-slide background-image="../assets/branding/section_bg.png" background-size="cover" background-position="center"}
+
+::: {.section-subtitle}
+The starting point for the new laboratory and fieldwork programme
+:::
+
+## Starting Point: The LHIF Paper
+
+:::: {.columns}
+::: {.column width="55%"}
+
+**Carleton et al. (2026)**
+
+*Bayesian modelling of the latent human influence field in archaeological urban sediments at Koh Ker, Cambodia.*
+
+Journal of Archaeological Science, 193, 106663. [doi:10.1016/j.jas.2026.106663](https://doi.org/10.1016/j.jas.2026.106663)
+
+**This update:** new field observations, laboratory measurements, and the move towards a spatial reconstruction.
+
+:::
+::: {.column width="45%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for the LHIF paper's main figure or a Koh Ker landscape photograph" width=100%}
+
+**Figure to add:** paper overview or site photograph.
+
+:::
+::::
+
+::: notes
+Open with the paper as the point of departure. Keep the recap short: this is an
+update on the evidence and the next modelling steps, rather than a repeat of the
+full LHIF talk. The citation is reproduced from the existing deck.
+:::
+
+## The Update in Three Parts
+
+1. Recap the JAS paper and the LHIF framework.
+2. Add FTIR and pXRF data from the same **2024 pilot trenches**.
+3. Introduce the **late-March 2026 coring campaign** and the intended spatial reconstruction.
+
+::: notes
+Distinguish the two collections throughout: the new FTIR and pXRF data are from
+soil samples collected in the 2024 pilot trenches reported in the JAS paper.
+The sediment cores were collected in late March 2026; their analyses are planned.
+:::
+
+## A Shared Framework for Different Measurements
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**The LHIF starting point**
+
+- Human influence is inferred from sedimentary traces.
+- Different measurements provide different observation channels.
+- Each channel needs an explicit link to the latent field.
+
+:::
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a simplified diagram of the published LHIF framework" width=100%}
+
+**Figure to add:** a simplified version of the published model.
+
+:::
+::::
+
+::: notes
+Reuse the existing talk's model diagram. Explain the latent quantity and the
+distinction between an observation and an inferred process. Introduce only the
+model detail needed to understand the additional channels later in this talk.
+:::
+
+## NEW DATA FROM THE 2024 TRENCHES {.section-slide background-image="../assets/branding/section_bg.png" background-size="cover" background-position="center"}
+
+::: {.section-subtitle}
+FTIR and pXRF on the same pilot-season soil samples reported in the JAS paper
+:::
+
+## Returning to the 2024 Pilot Trenches
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a map showing the earlier field season's sampling locations at Koh Ker" height=580}
+
+**Map to add:** the 2024 pilot trenches reported in the JAS paper.
+
+::: notes
+Recap the 2024 pilot season and its aims. Add confirmed site areas and sample locations.
+Keep the recent coring locations for the later section, or distinguish the two
+campaigns clearly if both are shown here.
+:::
+
+## The 2024 Collection
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**The material behind the new results**
+
+- Soil samples from the 2024 pilot trenches.
+- The same trench set reported in the JAS paper.
+- New FTIR and pXRF measurements on this material.
+- Field methods and sample inventory to add.
+
+:::
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a photograph of sampling or recording during the earlier field season" width=100%}
+
+**Photograph to add:** sampling in context.
+
+:::
+::::
+
+::: notes
+Replace the prompts with the actual campaign details. Include sample counts only
+when confirmed, and acknowledge collaborators and relevant permissions.
+:::
+
+## Connecting Field Samples to Lab Measurements
+
+::: {.callout-card}
+**Location → stratigraphic or depth context → sample identifier → measurement**
+:::
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a sampled profile with sample positions and corresponding laboratory identifiers" height=470}
+
+**Figure to add:** one worked example linking the field record to a laboratory sample.
+
+::: notes
+Explain the actual sample hierarchy and how measurements can be aligned. Identify
+any differences in sampling interval, sample volume, preparation, or preservation
+that matter for comparing channels. Do not imply identical resolution unless checked.
+:::
+
+## The Analytical Programme
+
+| Analysis / channel | Material and resolution | Status |
+|---|---|---|
+| FTIR | 2024 trench soil samples; sample coverage to add | Data available; plots to build |
+| pXRF | 2024 trench soil samples; sample coverage to add | Data available; plots to build |
+
+::: notes
+Add sample coverage, preparation, instrument details, and any remaining processing
+or quality-control work for each analysis. All results in this section belong to
+the 2024 trenches, not the 2026 cores. These channels will also be part of the
+planned laboratory programme for the new cores.
+:::
+
+## FTIR: The 2024 Trench Samples
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for FTIR spectra or derived measurements from the 2024 trench soil samples" height=570}
+
+**Plot to build:** FTIR spectra or selected derived measurements, grouped by trench and sample context.
+
+::: notes
+Choose the FTIR representation after reviewing the data. Label spectral axes and
+units and explain any preprocessing or derived measure. Add the actual observation
+as a takeaway once the plot exists; do not assign bands or infer processes here
+without supporting interpretation.
+:::
+
+## pXRF: The 2024 Trench Samples
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for selected pXRF measurements from the 2024 trench soil samples" height=570}
+
+**Plot to build:** selected pXRF measurements by trench and depth, with units and sample identifiers.
+
+::: notes
+Choose the elements or derived comparisons after reviewing the data and analytical
+quality. Explain calibration, reporting units, and treatment of values below
+detection limits where relevant. Do not imply any particular enrichment pattern
+before the plots and interpretation are ready.
+:::
+
+## How Do the Channels Compare?
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for aligned depth profiles comparing laboratory channels" width=100%}
+
+**Plot to build:** aligned profiles.
+
+:::
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a comparison of paired measurements across samples or contexts" width=100%}
+
+**Plot to build:** paired measurements or context comparison.
+
+:::
+::::
+
+::: notes
+Use matched samples where possible. Identify shared patterns, disagreements, and
+differences in resolution without treating correlation as evidence of a unique
+causal mechanism. Include relevant controls and batch information if available.
+:::
+
+## What the Results Need to Establish
+
+- Which patterns are reproducible across samples or contexts?
+- Which measurements contribute information beyond the existing channels?
+- Which patterns could reflect preservation, sediment properties, or measurement effects?
+
+::: {.callout-card}
+**Interpretation to complete after the plots:** what does each channel allow us to infer?
+:::
+
+::: notes
+Replace the questions with evidence-backed takeaways once the analyses have been
+reviewed. Keep preliminary findings visibly identified as preliminary.
+:::
+
+## How a New Channel Enters the Model
+
+::: {.callout-card}
+**Human influence → channel-specific process → measured observation**
+:::
+
+- Define which FTIR and pXRF observations should inform human influence, and why.
+- Choose an observation model appropriate to its units and distribution.
+- Represent measurement uncertainty and relevant alternative influences.
+
+::: notes
+This is the proposed modelling approach, not a claim that the new channels have
+already been integrated. Explain any indirect causal pathway rather than drawing
+a direct arrow from human influence to every measurement by default.
+:::
+
+## Proposed Model Extension
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a proposed LHIF model diagram distinguishing existing observation channels from new channels and additional processes" height=570}
+
+**Diagram to build:** existing model, proposed channels, and any additional processes.
+
+::: notes
+Adapt the published diagram. Label additions as proposed. Include shared sources
+of variation where scientifically justified; adding channels does not automatically
+make them independent or increase precision.
+:::
+
+## How We Will Evaluate the Extension
+
+- Check whether fitted models reproduce the observed channel behaviour.
+- Compare reconstructions with and without the new channels.
+- Examine sensitivity to channel assumptions and uncertainty.
+
+::: {.fragment}
+**The test:** what changes in the reconstruction, and why?
+:::
+
+::: notes
+Present this as a validation plan. Show posterior predictive checks and channel
+comparisons here when available. An informative disagreement may be more useful
+than a superficially narrower uncertainty interval.
+:::
+
+## THE MARCH 2026 CORING CAMPAIGN {.section-slide background-image="../assets/branding/section_bg.png" background-size="cover" background-position="center"}
+
+::: {.section-subtitle}
+Sediment cores collected in late March 2026; laboratory analyses planned
+:::
+
+## Where We Took Cores
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a map of the recently completed coring campaign at Koh Ker" height=570}
+
+**Map to add:** late-March 2026 core locations in relation to the 2024 trenches.
+
+::: notes
+The campaign took place in late March 2026. Add the confirmed number of cores and the sampling rationale.
+Explain what spatial coverage was achieved and what remains unsampled. Avoid
+implying that the campaign provides complete coverage of the city.
+:::
+
+## What We Recovered
+
+:::: {.columns}
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a field photograph of the recent coring work" width=100%}
+
+**Photograph to add:** coring and field recording.
+
+:::
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a representative recovered core or core log with scale and depth labels" width=100%}
+
+**Figure to add:** recovered core or representative log.
+
+:::
+::::
+
+::: notes
+Describe recovery, observed stratigraphy, and sample handling using the actual
+field records. Add depth ranges, gaps, and limitations only when confirmed.
+Keep field observations separate from interpretations awaiting lab results.
+:::
+
+## Applying the Same Analytical Programme
+
+::: {.callout-card}
+**New cores → laboratory sampling → the same set of analyses → comparable observation channels**
+:::
+
+- Plan the sampling intervals and material needed for FTIR, pXRF, and the other analyses.
+- Carry forward the laboratory controls and sample identifiers.
+- Check comparability with the earlier material before combining datasets.
+
+::: notes
+Return to the analytical programme slide and name the same analyses. The lab work
+on these cores is planned. State any necessary changes in preparation or resolution
+explicitly rather than assuming the core and earlier sampling workflows are identical.
+:::
+
+## The Intended Next Reconstruction
+
+:::: {.columns}
+::: {.column width="50%"}
+
+**A proposed spatial LHIF**
+
+- Locate the measured profiles within a shared spatial framework.
+- Model spatial variation and the information shared across locations.
+- Show reconstruction uncertainty alongside the estimated field.
+
+:::
+::: {.column width="50%"}
+
+![](../assets/placeholders/image.svg){fig-alt="Placeholder for a conceptual illustration of sampled core locations and a proposed spatial LHIF reconstruction" width=100%}
+
+**Conceptual figure to build:** sampled locations and the proposed field.
+
+:::
+::::
+
+::: notes
+Label this illustration as conceptual, not a fitted result. Explain the spatial
+target and the limits of extrapolation beyond the sampling coverage.
+:::
+
+## What Makes Profiles Comparable?
+
+- Define which deposits, horizons, or time intervals are being compared.
+- Assess the chronological and stratigraphic alignment between locations.
+- Carry alignment uncertainty into the reconstruction where possible.
+
+::: {.callout-card}
+**Equal depth does not establish equal age across cores.**
+:::
+
+::: notes
+Separate a spatial reconstruction for a defined comparison target from a future
+spatiotemporal reconstruction. Explain the dating evidence available or planned;
+do not imply that chronological control is already sufficient.
+:::
+
+## Next Steps
+
+1. Finalise the FTIR and pXRF plots for the 2024 trenches and their interpretation.
+2. Specify and evaluate these additional LHIF observation channels.
+3. Apply the analytical programme to the March 2026 cores.
+4. Develop the spatial reconstruction with explicit uncertainty and validation.
+
+::: notes
+Add collaborators, responsibilities, and dates once agreed. Revisit the distinction
+between work completed, analyses underway, and proposed modelling.
+:::
+
+## Take-Home Message
+
+::: {.v-center}
+
+**The field and laboratory programmes are building the evidence for a spatial LHIF at Koh Ker.**
+
+- The paper supplies the starting framework.
+- FTIR and pXRF extend the evidence from the 2024 trenches.
+- The March 2026 cores provide the next material for analysis across locations.
+
+:::
+
+## Acknowledgements and Discussion
+
+**Acknowledgements to complete:** field team, laboratory collaborators, Cambodian partners, institutions, and funders.
+
+**Discussion:** what should the new spatial reconstruction allow us to explain?
+
+::: notes
+Add names and institutional credits before presenting. Confirm image credits and
+permissions as the placeholder figures are replaced.
+:::
