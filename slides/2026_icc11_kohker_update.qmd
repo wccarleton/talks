@@ -1,123 +1,229 @@
 ---
-title: "Koh Ker Urban Trajectories"
-subtitle: "Sediments, chronology, and new directions after the 2026 field season"
+title: "Modelling Human Influence at Koh Ker Using Multiple Proxies"
+subtitle: "understanding the urban trajectory through sedimentary archives"
 author: "W. Christopher Carleton"
 date: today
 format: revealjs
 ---
 
 ## Introduction
-
-![](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr1.jpg){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
+![Prasat Prang, Koh Ker](https://lah.ru/wp-content/uploads/2017/12/camb11.jpg){fig-alt="Placeholder for Koh Ker landscape photograph" fig-align="center" .img-card}
 
 ::: {.reference}
-Update for NAPV and ICC on sediment-based reconstruction at Koh Ker, Cambodia.
+Report on @carletonLatentHumanInfluence2026.
 :::
 
 ::: notes
-Open with Koh Ker as the object of the talk: the historical and archaeological landscape whose urban trajectory we want to reconstruct.
+Open with the challenge of reconstructing a city's changing activity across a large landscape. Replace the placeholder with a Koh Ker photograph.
 :::
 
 ---
 
 ## Overview
 
-- The Koh Ker reconstruction challenge
-- 2024 results published in Carleton et al. (2026)
-- New lab results
-- March 2026 fieldwork and future directions
+::::: {.v-center}
+:::: {.columns}
+::: {.column width="50%"}
+
+::: {.callout-card style="height: 220px; box-sizing: border-box;"}
+**01 · The challenge**
+
+Reconstructing Koh Ker.
+:::
+
+::: {.callout-card style="height: 220px; box-sizing: border-box;"}
+**02 · The LHIF**
+
+Viewing proxies in sediments as latent human influence.
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.callout-card style="height: 220px; box-sizing: border-box;"}
+**03 · The Pilot and Results**
+
+Ceramics and magnetic susceptibility from the pilot trenches (and new data).
+:::
+
+::: {.callout-card style="height: 220px; box-sizing: border-box;"}
+**04 · Recent Developments**
+
+Next phase: core sampling and more proxies.
+:::
+
+:::
+::::
+:::::
 
 ---
 
-## THE KOH KER CHALLENGE {.section-slide
+## THE URBAN SAMPLING PROBLEM {.section-slide
    background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
 ---
 
-## A Capital With an Uneven Archive
-
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for Koh Ker map showing the monumental core, Rahal, and surrounding urban landscape" fig-align="center" .img-card}
-
-::: notes
-Use a Koh Ker landscape or lidar map. Frame the problem around Koh Ker's political prominence, extensive urban fabric, and uneven archaeological visibility.
-:::
-
----
-
-## The Reconstruction Problem
-
+## Space and Time
+::::: {.v-center}
 :::: {.columns}
 ::: {.column width="50%"}
-**Landscape evidence**
+::: {.callout-card}
+**Lidar and survey**
 
-- Extensive urban features.
-- Strong spatial patterning.
-- Limited direct timing.
+- Extensive spatial coverage.
+- Limited chronological depth.
+
+![Angkor Wat Lidar](assets:2026_latent_human_influence/angkor-wat-lidar.png){height=450 fig-align="center" .img-card}
+
+::: {.reference}
+Source: [@luoEarthObservationArchaeology2023]
+:::
+
+:::
 :::
 
 ::: {.column width="50%"}
-**Subsurface evidence**
+::: {.callout-card}
+**Excavation**
 
-- Stratified deposits.
-- Datable materials.
-- Narrow windows into a large city.
+- Temporal depth.
+- Limited spatial coverage.
+
+![Catalhöyük](assets:2026_latent_human_influence/catalhoyuk_2014_southarea.jpg){height=450 fig-align="center" .img-card}
+
+::: {.reference}
+Source: https://www.flickr.com/photos/catalhoyuk/
+:::
+
+:::
 :::
 ::::
 
 ::: {.card}
-How did activity at Koh Ker vary across space and through time?
+How can we reconstruct an urban trajectory between these scales?
 :::
-
+:::::
 ---
 
-## Why Sediments Matter Here
+## Different Proxies, Different Measurements
 
-- Koh Ker's urban history is recorded in shallow, spatially variable deposits.
-- Anthropogenic sediments can preserve activity where architecture is absent or ambiguous.
-- Rapid, low-impact sampling can expand beyond the small number of excavated contexts.
+:::: {.columns .col-center-container}
+::: {.column .v-center width="50%"}
+- Proxy records differ in resolution, distribution, and measurement structure.
+- Joint inference needs a model linking observations to a shared process.
+:::
+::: {.column .v-center width="50%"}
+![Proxy Process](assets:2026_latent_human_influence/multi_proxy_process_reconstruction.webp){.img-card fig-align="center"}
+:::
+::::
 
 ::: notes
-Keep this Koh Ker-specific. The key point is not method in the abstract, but why sedimentary proxies can help recover the city's changing occupation and use.
+Use an example contrasting a continuous measurement with an artefact count. Introduce the distinction between what we observe and what we want to infer.
 :::
 
 ---
 
-## Working Aim
+## Research Aim
 
-::: {.center-block}
-**Build a dated, spatially distributed reconstruction of human activity at Koh Ker.**
+:::: {.columns .col-center-container}
+::: {.column .v-center width="50%"}
+
+**Estimate past human influence at Koh Ker by combining heterogeneous sediment proxies to understand urban trajectories.**
+
 :::
+::: {.column .v-center width="50%"}
+![Proxy Fusion](assets:2026_latent_human_influence/kohker_proxy_fusion.webp){.img-card fig-align="center"}
+:::
+::::
 
 ::: notes
-Use this to transition from the Koh Ker problem to the published pilot study.
+Use an example contrasting a continuous measurement with an artefact count. Introduce the distinction between what we observe and what we want to infer.
 :::
 
 ---
 
-## THE 2024 PILOT STUDY {.section-slide
+## THE LATENT HUMAN INFLUENCE FIELD {.section-slide
    background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
 ---
 
-## Published Framework
+## What Is a Latent Field?
 
-- Carleton et al. (2026) modelled sedimentary traces of human activity at Koh Ker.
-- The study used eight test trenches from the 2024 fieldwork.
-- The goal was to estimate a latent human influence field from multiple proxies.
+:::: {.columns .col-center-container}
+::: {.column .v-center width="50%"}
+- **Latent:** Not directly measurable.
+- **Field:** intensity or properties can vary throughout space and or time.
+- e.g., temperature
+:::
+::: {.column .v-center width="50%"}
+![Temperature Field](assets:2026_latent_human_influence/temperature_field_volume.webp){.img-card fig-align="center"}
+:::
+::::
 
 ---
 
-## Pilot Sampling
+## Latent Human Influence Field (LHIF)
 
-- Eight test trenches at Koh Ker, Cambodia.
+:::: {.columns .col-center-container}
+::: {.column .v-center width="50%"}
+- **Latent:** human influence is inferred from its traces.
+- **Field:** influence can vary across the sediment archive (translated into time).
+- many proxies are noisy observations of a shared LHIF.
+- Proxy records differ in resolution, distribution, and measurement structure.
+- Joint inference needs a model linking observations to a shared process.
+:::
+::: {.column .v-center width="50%"}
+![Theoretical LHIF](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr1.jpg){.img-card fig-align="center"}
+:::
+::::
+
+---
+
+## KOH KER PILOT AND RESULTS {.section-slide
+   background-image="../assets/branding/section_bg.png"
+   background-size="contain"
+   background-position="center"}
+
+---
+
+## Site and Context
+
+Cannonically, Koh Ker was established by Jayavarman IV in 921 CE and became the sole capital from 928–944 CE. The site represents a brief but highly distinctive phase of Khmer urbanism, political history, monumental architecture, and sculpture. But it contains a much longer sedimentary record of human activity, which can be reconstructed through the LHIF framework.
+
+![Koh Ker in Regional Context](assets:2026_latent_human_influence/kk_regional.jpeg){.img-card height=600 fig-align="center"}
+
+::: notes
+
+:::
+
+---
+
+## Pilot Study
+
+- Eight test trenches were dug in 2024 and we have just published the first set of results.
 - Paired magnetic susceptibility and ceramic abundance.
-- Depth-wise observations from shallow urban sediments.
+- Rapid, low-impact excavation as a potential survey strategy.
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for trench locations and fieldwork photograph" fig-align="center" .img-card}
+:::: {.columns}
+::: {.column width="50%"}
+
+![Koh Ker Trench Locations](assets:2026_latent_human_influence/kkpp24.jpeg){.img-card height=600 fig-align="center"}
+
+:::
+::: {.column width="50%"}
+
+![Trench Example](assets:2026_latent_human_influence/trench_example.jpg){.img-card height=600 fig-align="center"}
+
+:::
+::::
+
+::: {.reference}
+Report on @carletonLatentHumanInfluence2026.
+:::
 
 ---
 
@@ -125,179 +231,142 @@ Use this to transition from the Koh Ker problem to the published pilot study.
 
 :::: {.columns}
 ::: {.column width="50%"}
-**Magnetic susceptibility**
+**Ceramics**
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for magnetic susceptibility profile" fig-align="center" .img-card}
+![Ceramics Data](assets:2026_latent_human_influence/ceramics_example.jpg){fig-align="center" height="600" .img-card}
 :::
 
 ::: {.column width="50%"}
-**Ceramic abundance**
+**Magnetic Susceptibility**
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for ceramic abundance profile" fig-align="center" .img-card}
+![Magnetic Susceptibility](assets:2026_latent_human_influence/magsus_trench_profile.png){fig-align="center" height="600" .img-card}
 :::
 ::::
 
 ::: notes
-Show paired observations from one trench. Emphasise what each proxy contributes to the Koh Ker reconstruction.
+Show paired observations from one trench before introducing the model. Explain how each channel was recorded and its depth resolution.
 :::
 
----
-
-## Latent Human Influence Field
-
-- **Latent:** human influence is inferred from its traces.
-- **Field:** influence can vary across the sediment archive.
-- Both proxies are noisy observations of a shared LHIF.
-
-::: {.card}
-The model estimates the activity signal we care about, rather than treating any single proxy as the answer.
-:::
-
----
-
-## Model and Result
+## Model Structure
 
 - Bayesian hierarchical latent-variable model.
 - Proxy channels linked within a causal framework.
 - Depth-wise reconstructions for the pilot trenches.
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for the paper's causal model diagram" fig-align="center" .img-card}
+![Model Diagram](assets:2026_latent_human_influence/model_dag.webp){fig-align="center" height="600" .img-card}
 
 ::: notes
-Use the model diagram or a simplified result schematic. This is the condensed version of the other talk, so do not dwell on mathematical details unless asked.
+Insert the model diagram. Walk through the latent process, channel-specific observation models, and hierarchical structure. Add equations here if appropriate for the audience.
 :::
 
 ---
 
-## Published Takeaways
-
-- Magnetic susceptibility broadly tracks ceramic-rich anthropogenic horizons.
-- Joint modelling clarifies where proxy records agree and where uncertainty remains.
-- The pilot justifies moving from trenches toward denser, less invasive sampling.
-
-::: notes
-This is the hinge: the publication established that sediment proxies can recover activity structure at Koh Ker, but it also showed that chronology and additional proxies are needed.
-:::
-
----
-
-## NEW LAB RESULTS {.section-slide
+## RESULTS {.section-slide
    background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
 ---
 
-## FTIR
+## Reconstructing Human Influence
 
-- FTIR adds mineralogical and combustion-sensitive information to the sediment record.
-- It helps separate anthropogenic alteration from natural sediment variation.
-- These measurements extend the pilot beyond magnetic susceptibility and ceramics.
-
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for FTIR spectra or FTIR-derived summary plot from Koh Ker sediment samples" fig-align="center" .img-card}
+::::: {.v-center}
+![Per Trench Data](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr5.jpg){fig-align="center" .img-card}
+:::::
 
 ::: notes
-Insert the actual FTIR plot when ready. Keep the interpretation tied to Koh Ker deposits and what the method adds to the published proxy set.
+Raw data per trench.
 :::
 
 ---
 
-## pXRF
+## Ceramics Channel
 
-- pXRF provides elemental profiles through the sampled deposits.
-- Elemental patterning can identify activity-related enrichment, sediment sources, and post-depositional change.
-- Together with FTIR, pXRF begins to define a richer geochemical signature for Koh Ker activity.
+Ceramics channel across all 8 trenches. The model captures the depth-wise variation in ceramic abundance, which serves as a proxy for human activity. The Latent influence field is inferred from the ceramics data, showing peaks corresponding to periods of increased human activity.
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for pXRF elemental profile or multivariate summary from Koh Ker sediment samples" fig-align="center" .img-card}
+![Ceramics Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr6.jpg){fig-align="center" height="600" .img-card}
 
 ::: notes
-Use the clearest initial pXRF result, preferably one that aligns with a visible stratigraphic or magnetic susceptibility change.
+
 :::
 
 ---
 
-## Initial Chronological Results
+## Magnetic Susceptibility Channel
 
-- First new chronological results are beginning to anchor the sediment profiles in time.
-- The immediate goal is to connect depth-wise proxy changes to phases of activity at Koh Ker.
-- Better temporal control is what turns proxy profiles into urban trajectories.
+Magnetic susceptibility channel across all 8 trenches. The model captures the depth-wise variation in magnetic susceptibility, which serves as a proxy for human activity. The Latent influence field is inferred from the magnetic susceptibility data, showing peaks corresponding to periods of increased human activity.
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for initial chronological model or dated sample positions from Koh Ker" fig-align="center" .img-card}
+![Magnetic Susceptibility Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr7.jpg){fig-align="center" height="600" .img-card}
 
 ::: notes
-Add the dates once they are ready to show. Avoid overclaiming: describe them as initial chronological anchors unless the model is already stable.
+
 :::
 
 ---
 
-## 2026 FIELDWORK AND NEXT STEPS {.section-slide
+## pXRF Channel
+
+pXRF channel across all 8 trenches. We have finished the planned pXRF analysis. Here we show multidimensional differences in each trench sample between the sterile bottom layers and the accumulated upper sediments. As with magnetic susceptibility, we observe depth-wise variation in elemental composition, which can serve as another proxy for human activity. The Latent influence field model will be updated to include this new channel along with FTIR data (which we are currently processing) and isotope data.
+
+![pXRF Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr8.jpg){fig-align="center" height="600" .img-card}
+
+::: notes
+
+:::
+
+---
+
+## Next Pilot Steps
+
+:::: {.columns}
+::: {.column width="50%"}
+
+::: {.callout-card style="height: 220px; box-sizing: border-box;"}
+**Time**
+
+Co-registration of trenches and dating of sediments.
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.callout-card style="height: 220px; box-sizing: border-box;"}
+**Sampling**
+
+Increased spatial coverage and additional proxies (eg FTIR, pXRF).
+:::
+
+:::
+::::
+
+![Coregistration](assets:2026_latent_human_influence/coregistration_schematic.webp){fig-align="center" height="600" .img-card}
+
+---
+
+## NEXT RESEARCH PHASE {.section-slide
    background-image="../assets/branding/section_bg.png"
    background-size="contain"
    background-position="center"}
 
 ---
 
-## March 2026 Field Season
+## Pinhole Sampling
 
-- We returned to Koh Ker to collect terrestrial sediment cores as planned.
-- The coring strategy was designed to expand spatial coverage while limiting disturbance.
-- The new cores target deposits that can connect landscape features, geochemistry, and chronology.
+At the moment, we have a "pinhole" view of the latent human influence field. The pilot trenches provide depth-wise reconstructions, but spatial coverage is limited. Future work could expand trenching and sampling to better understand the spatial distribution of human influence across the site.
 
-![](../assets/placeholders/image.svg){fig-alt="Placeholder for March 2026 fieldwork and terrestrial coring at Koh Ker" fig-align="center" .img-card}
-
-::: notes
-Insert fieldwork photographs and/or a coring location map. Emphasise that this is the planned next step emerging from the pilot.
-:::
+![Pinhole Sampling](assets:2026_latent_human_influence/lhif_pinhole.webp){fig-align="center" height="600" .img-card}
 
 ---
 
-## Cores Now in the Lab
+## 2026 fieldwork update
 
-- The terrestrial sediment cores are now at our institute.
-- Processing and subsampling will begin soon.
-- The first priorities are logging, magnetic susceptibility, FTIR, pXRF, and chronological sample selection.
+- we completed a trial terrestrial core sampling survey in 2026, with dozens of cores collected across the site.
 
-::: {.card}
-The next phase moves from proof of concept to a spatially broader Koh Ker reconstruction.
-:::
+![Coring](assets:2026_latent_human_influence/coring_steps_1.jpg){fig-align="center" height="600" .img-card}
 
 ---
 
-## A Larger Tropical Urban Archaeology Programme
+## References
 
-- MPG has recently established a new international tropical research centre in São Paulo with the university there.
-- Part of this centre includes funding for a Cambodian PhD student supervised at our institute in coordination with São Paulo.
-- This sits within a major new initiative in tropical urban archaeology, with Koh Ker planned as one of the main study locations.
-
-::: {.center-block}
-**Koh Ker is becoming a core site for a broader, collaborative programme on tropical urbanism.**
-:::
-
-::: notes
-Confirm the official centre name and partner-unit wording before final delivery. Use São Paulo, not Sao Palo, on the slide.
-:::
-
----
-
-## Take-Home Points
-
-- Koh Ker's urban trajectory needs integrated spatial, sedimentary, and chronological evidence.
-- The 2024 publication established the modelling framework and proxy logic.
-- FTIR, pXRF, new dates, and the 2026 cores are expanding the reconstruction.
-- The new São Paulo-centred programme creates a path for long-term Cambodian-led research.
-
----
-
-## Reference
-
-::: {.reference}
-Carleton, W. Christopher, Thon Tho, David Brotherson, Samnang Phin, Huw Groucutt, Jürgen Renn, and Patrick Roberts. 2026. “Bayesian modelling of the latent human influence field in archaeological urban sediments at Koh Ker, Cambodia.” *Journal of Archaeological Science* 193: 106663. [https://doi.org/10.1016/j.jas.2026.106663](https://doi.org/10.1016/j.jas.2026.106663)
-:::
-
----
-
-## Discussion
-
-::: {.center-block}
-**What would a genuinely spatial and chronological reconstruction of Koh Ker change?**
+::: {#refs}
 :::

@@ -192,7 +192,7 @@ Use an example contrasting a continuous measurement with an artefact count. Intr
 
 ## Site and Context
 
-Cannonically, Koh Ker was established by Jayavarman IV in 921 CE. It became the sole capital of the Khmer Empire from 928–944 CE, before the political centre returned to Angkor. The site represents a brief but highly distinctive phase of Khmer urbanism, monumental architecture, and sculpture.
+Canonically, Koh Ker was established by Jayavarman IV in 921 CE. It became the sole capital of the Khmer Empire from 928–944 CE, before the political centre returned to Angkor. The site represents a brief but highly distinctive phase of Khmer urbanism, monumental architecture, and sculpture.
 
 ![Koh Ker in Regional Context](assets:2026_latent_human_influence/kk_regional.jpeg){.img-card height=600 fig-align="center"}
 
