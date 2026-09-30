@@ -429,6 +429,21 @@ section.section-slide .section-subtitle {
 .reveal .columns > .column {
   min-width: 0;
 }
+/* Give text/image pairs a predictable gutter without extra child margins. */
+.reveal .columns.text-image-columns {
+  gap: 12px;
+}
+.reveal .columns.text-image-columns > .column > :not(ul, ol) {
+  margin-left: 0;
+  margin-right: 0;
+}
+.reveal .columns.text-image-columns > .column:last-child figure {
+  margin-left: 0;
+  margin-right: auto;
+}
+.reveal .columns.text-image-columns > .column:first-child {
+  hyphens: auto;
+}
 .reveal .columns.col-center-container {
   display: flex !important;
   align-items: stretch;

@@ -77,10 +77,6 @@ Next phase: core sampling and more proxies.
 
 ![Angkor Wat Lidar](assets:2026_latent_human_influence/angkor-wat-lidar.png){height=450 fig-align="center" .img-card}
 
-::: {.reference}
-Source: [@luoEarthObservationArchaeology2023]
-:::
-
 :::
 :::
 
@@ -127,14 +123,14 @@ Use an example contrasting a continuous measurement with an artefact count. Intr
 
 ## Research Aim
 
-:::: {.columns .col-center-container}
-::: {.column .v-center width="50%"}
+:::: {.columns .col-center-container .text-image-columns}
+::: {.column .v-center width="20%"}
 
 **Estimate past human influence at Koh Ker by combining heterogeneous sediment proxies to understand urban trajectories.**
 
 :::
-::: {.column .v-center width="50%"}
-![Proxy Fusion](assets:2026_latent_human_influence/kohker_proxy_fusion.webp){.img-card fig-align="center"}
+::: {.column .v-center width="80%"}
+![Proxy Fusion](assets:2026_icc11_kohker_update/proxy_reconstruction_diagram.webp?v=3c8afe7e058d){.img-card height="800" fig-align="center"}
 :::
 ::::
 
@@ -153,14 +149,14 @@ Use an example contrasting a continuous measurement with an artefact count. Intr
 
 ## What Is a Latent Field?
 
-:::: {.columns .col-center-container}
-::: {.column .v-center width="50%"}
+:::: {.columns .col-center-container .text-image-columns}
+::: {.column .v-center width="20%"}
 - **Latent:** Not directly measurable.
 - **Field:** intensity or properties can vary throughout space and or time.
 - e.g., temperature
 :::
-::: {.column .v-center width="50%"}
-![Temperature Field](assets:2026_latent_human_influence/temperature_field_volume.webp){.img-card fig-align="center"}
+::: {.column .v-center width="80%"}
+![Temperature Field](assets:2026_latent_human_influence/temperature_field_volume.webp){.img-card height="800" fig-align="center"}
 :::
 ::::
 
@@ -168,16 +164,16 @@ Use an example contrasting a continuous measurement with an artefact count. Intr
 
 ## Latent Human Influence Field (LHIF)
 
-:::: {.columns .col-center-container}
-::: {.column .v-center width="50%"}
+:::: {.columns .col-center-container .text-image-columns}
+::: {.column .v-center width="20%"}
 - **Latent:** human influence is inferred from its traces.
 - **Field:** influence can vary across the sediment archive (translated into time).
 - many proxies are noisy observations of a shared LHIF.
 - Proxy records differ in resolution, distribution, and measurement structure.
 - Joint inference needs a model linking observations to a shared process.
 :::
-::: {.column .v-center width="50%"}
-![Theoretical LHIF](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr1.jpg){.img-card fig-align="center"}
+::: {.column .v-center width="80%"}
+![Theoretical LHIF](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr1.jpg){.img-card height="800" fig-align="center"}
 :::
 ::::
 
@@ -192,9 +188,18 @@ Use an example contrasting a continuous measurement with an artefact count. Intr
 
 ## Site and Context
 
+:::: {.columns .text-image-columns}
+::: {.column width="20%"}
+
 Cannonically, Koh Ker was established by Jayavarman IV in 921 CE and became the sole capital from 928–944 CE. The site represents a brief but highly distinctive phase of Khmer urbanism, political history, monumental architecture, and sculpture. But it contains a much longer sedimentary record of human activity, which can be reconstructed through the LHIF framework.
 
-![Koh Ker in Regional Context](assets:2026_latent_human_influence/kk_regional.jpeg){.img-card height=600 fig-align="center"}
+:::
+::: {.column width="80%"}
+
+![Koh Ker in Regional Context](assets:2026_latent_human_influence/kk_regional.jpeg){.img-card height="800" fig-align="center"}
+
+:::
+::::
 
 ::: notes
 
@@ -270,9 +275,7 @@ Insert the model diagram. Walk through the latent process, channel-specific obse
 
 ## Reconstructing Human Influence
 
-::::: {.v-center}
-![Per Trench Data](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr5.jpg){fig-align="center" .img-card}
-:::::
+![Per Trench Data](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr5.jpg){fig-align="center" height="800" .img-card}
 
 ::: notes
 Raw data per trench.
@@ -282,9 +285,17 @@ Raw data per trench.
 
 ## Ceramics Channel
 
-Ceramics channel across all 8 trenches. The model captures the depth-wise variation in ceramic abundance, which serves as a proxy for human activity. The Latent influence field is inferred from the ceramics data, showing peaks corresponding to periods of increased human activity.
+:::: {.columns .text-image-columns}
+::: {.column width="20%"}
 
-![Ceramics Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr6.jpg){fig-align="center" height="600" .img-card}
+**Ceramics channel across all 8 trenches.** The model captures the depth-wise variation in ceramic abundance, which serves as a proxy for human activity. The Latent influence field is inferred from the ceramics data, showing peaks corresponding to periods of increased human activity.
+
+:::
+::: {.column width="80%"}
+
+![Ceramics Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr6.jpg){fig-align="center" height="800" .img-card}
+:::
+::::
 
 ::: notes
 
@@ -294,25 +305,35 @@ Ceramics channel across all 8 trenches. The model captures the depth-wise variat
 
 ## Magnetic Susceptibility Channel
 
-Magnetic susceptibility channel across all 8 trenches. The model captures the depth-wise variation in magnetic susceptibility, which serves as a proxy for human activity. The Latent influence field is inferred from the magnetic susceptibility data, showing peaks corresponding to periods of increased human activity.
+:::: {.columns .text-image-columns}
+::: {.column width="20%"}
 
-![Magnetic Susceptibility Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr7.jpg){fig-align="center" height="600" .img-card}
-
-::: notes
+**Magnetic susceptibility channel across all 8 trenches.** The model captures the depth-wise variation in magnetic susceptibility, which serves as a proxy for human activity. The Latent influence field is inferred from the magnetic susceptibility data, showing peaks corresponding to periods of increased human activity.
 
 :::
+::: {.column width="80%"}
+
+![Magnetic Susceptibility Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr7.jpg){fig-align="center" height="800" .img-card}
+:::
+
+::::
 
 ---
 
 ## pXRF Channel
 
-pXRF channel across all 8 trenches. We have finished the planned pXRF analysis. Here we show multidimensional differences in each trench sample between the sterile bottom layers and the accumulated upper sediments. As with magnetic susceptibility, we observe depth-wise variation in elemental composition, which can serve as another proxy for human activity. The Latent influence field model will be updated to include this new channel along with FTIR data (which we are currently processing) and isotope data.
+:::: {.columns .text-image-columns}
+::: {.column width="20%"}
 
-![pXRF Comparison](https://ars.els-cdn.com/content/image/1-s2.0-S0305440326001937-gr8.jpg){fig-align="center" height="600" .img-card}
-
-::: notes
+**pXRF channel across all 8 trenches.** We finished the planned pXRF analysis. Here we show multidimensional differences in each trench sample between the sterile bottom layers and upper sediments. As with magnetic susceptibility, we observe depth-wise variation in elemental composition, another proxy for human activity. The Latent influence field model will be updated to include this new channel along with FTIR data (which we are currently processing) and isotope data.
 
 :::
+::: {.column width="80%"}
+
+![pXRF Comparison](assets:2026_icc11_kohker_update/pxrf_difference_by_trench_unit.webp){fig-align="center" height="800" .img-card}
+
+:::
+::::
 
 ---
 
@@ -360,19 +381,32 @@ At the moment, we have a "pinhole" view of the latent human influence field. The
 
 ## 2026 fieldwork update
 
-- we completed a trial terrestrial core sampling survey in 2026, with dozens of cores collected across the site.
+:::: {.columns .text-image-columns}
+::: {.column width="20%"}
 
-::: {.image-diagram .image-diagram-3 .image-diagram-small .image-diagram-tight}
-![](assets:2026_latent_human_influence/coring_steps_1.jpg){fig-alt="Coring in the field, step 1" .img-card}
-
-![](assets:2026_latent_human_influence/coring_steps_2.jpg){fig-alt="Coring in the field, step 2" .img-card}
-
-![](assets:2026_latent_human_influence/coring_steps_3.jpg){fig-alt="Coring in the field, step 3" .img-card}
+We completed a trial terrestrial core sampling survey in March 2026, with dozens of cores collected across the site.
 :::
+::: {.column width="80%"}
 
+:::: {.image-diagram style="grid-template-columns: repeat(2, max-content); justify-content: center; gap: 5px 5px; margin: 5px auto 0; --image-diagram-max-height: none;"}
+![](assets:2026_latent_human_influence/coring_steps_1.jpg){fig-alt="Coring in the field, step 1" height=400 .img-card}
+
+![](assets:2026_latent_human_influence/coring_steps_2.jpg){fig-alt="Coring in the field, step 2" height=400 .img-card}
+
+::: {.image-panel style="grid-column: 1 / -1;"}
+![](assets:2026_latent_human_influence/coring_steps_3.jpg){fig-alt="Coring in the field, step 3" height=400 .img-card style="margin-inline: auto;"}
+:::
+::::
+
+:::
+::::
 ---
 
 ## References
 
-::: {#refs}
+::: {#refs style="font-size: 54px;"}
+:::
+
+::: {style="text-align: center; margin-top: 24px;"}
+[![](../assets/qr/kohker-paper-doi.png){height=320 fig-alt="QR code linking to the paper DOI: 10.1016/j.jas.2026.106663" .nostretch}](https://doi.org/10.1016/j.jas.2026.106663)
 :::

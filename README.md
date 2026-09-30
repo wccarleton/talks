@@ -57,6 +57,50 @@ HTML and support folders beside the example source; these are ignored by Git.
 
 ## Offline and PowerPoint export
 
+### PowerPoint preserving the Reveal appearance (recommended)
+
+`scripts/export-slides.py` renders the deck as Reveal HTML, captures each slide
+as a PNG, and embeds one image per PowerPoint slide. The default is 3840 x 2160
+pixels for the shared 1920 x 1080 theme. Speaker notes are copied into PowerPoint.
+Text and figures are baked into each image; animations and interactive content
+are static. Fragments are all shown on a single slide. Browser navigation controls
+are hidden, while slide numbers, branding, and the deck's layout are retained.
+
+One-time setup from the repository root in PowerShell (Python 3.10+ and Quarto
+must be installed):
+
+```powershell
+python -m venv tools/export-venv
+.\tools\export-venv\Scripts\python.exe -m pip install -r scripts/requirements-export.txt
+```
+
+First export, including the browser download:
+
+```powershell
+.\tools\export-venv\Scripts\python.exe scripts/export-slides.py slides/2026_icc11_kohker_update.qmd --install-browser
+```
+
+Subsequent exports:
+
+```powershell
+.\tools\export-venv\Scripts\python.exe scripts/export-slides.py slides/2026_icc11_kohker_update.qmd
+```
+
+The resulting file is
+`export/2026_icc11_kohker_update/image-pptx/2026_icc11_kohker_update-images.pptx`.
+Individual PNGs are in its `images/` directory; `manifest.json` lists the current
+export's slides. Re-exporting overwrites matching output files. If a deck gets
+shorter, older extra PNGs may remain, but are not included in the new PowerPoint.
+Use `--scale 1` for 1920 x 1080 images, or `--scale 3` for 5760 x 3240 images.
+Higher resolution increases file size; it cannot add detail to low-resolution
+source photographs. Source image URLs must be reachable during rendering.
+
+On macOS/Linux, use `tools/export-venv/bin/python` in place of the Windows Python
+path above. Chromium is downloaded to the ignored `tools/playwright/` directory
+unless `PLAYWRIGHT_BROWSERS_PATH` is set. No PowerPoint installation is required.
+
+### Editable PowerPoint and offline HTML (original exporter)
+
 Generated offline decks and PowerPoint files go under `export/`, which is
 ignored by Git. The tracked export wiring is `_quarto-export.yml`,
 `scripts/export-talk.sh`, and `filters/assets.lua`.
